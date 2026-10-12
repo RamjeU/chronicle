@@ -1,7 +1,7 @@
 import { useMemo, useState } from 'react'
 import { Timeline } from './components/Timeline'
 import { Panel } from './components/Panel'
-import { ENTITIES } from './lib/data'
+import { CONTACTS, ENTITIES } from './lib/data'
 import { ENTITY_TYPES, type EntityType } from './lib/types'
 import type { ScaleMode } from './lib/scale'
 import { isAlive } from './lib/time'
@@ -20,6 +20,15 @@ export default function App() {
   }, [query, hiddenTypes])
 
   const selectedEntities = selected.map((id) => ENTITIES.find((e) => e.id === id)!).filter(Boolean)
+  const linked = useMemo(() => {
+    const set = new Set<string>()
+    if (selected.length !== 1) return set
+    for (const c of CONTACTS) {
+      if (c.a === selected[0]) set.add(c.b)
+      else if (c.b === selected[0]) set.add(c.a)
+    }
+    return set
+  }, [selected])
   const alive = useMemo(() => (sliceYear === null ? [] : visible.filter((e) => isAlive(e, sliceYear))), [visible, sliceYear])
 
   const toggle = (id: string) =>
@@ -38,7 +47,7 @@ export default function App() {
       <header className="top">
         <div>
           <h1>Chronicle</h1>
-          <p>Who existed when, and who could have known whom. {ENTITIES.length} entries and growing.</p>
+          <p>Who existed when, and who could have known whom. {ENTITIES.length} entries, {CONTACTS.length} recorded connections.</p>
         </div>
         <div className="controls">
           <input type="search" placeholder="Filter by name…" value={query} onChange={(e) => setQuery(e.target.value)} />
@@ -63,6 +72,7 @@ export default function App() {
           entities={visible}
           mode={mode}
           selected={selected}
+          linked={linked}
           sliceYear={sliceYear}
           onToggle={toggle}
           onSlice={setSliceYear}

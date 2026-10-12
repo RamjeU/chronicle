@@ -1,0 +1,847 @@
+[
+  {
+    "id": "han--silk-road--trade",
+    "a": "han",
+    "b": "silk-road",
+    "kind": "trade",
+    "tier": "documented",
+    "from": -130,
+    "to": 220,
+    "summary": "Zhang Qian's missions west (from c. 138 BCE) opened the overland routes.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Zhang_Qian"
+    ]
+  },
+  {
+    "id": "silk-road--roman-empire--trade",
+    "a": "silk-road",
+    "b": "roman-empire",
+    "kind": "trade",
+    "tier": "documented",
+    "from": -30,
+    "to": 476,
+    "summary": "Roman demand for silk; goods passed through Parthian, Kushan and later Sasanian middlemen.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Silk_Road"
+    ]
+  },
+  {
+    "id": "han--roman-empire--diplomatic",
+    "a": "han",
+    "b": "roman-empire",
+    "kind": "diplomatic",
+    "tier": "plausible",
+    "from": 97,
+    "to": 166,
+    "summary": "Chinese sources describe Rome as Daqin. Gan Ying reached the Persian Gulf c. 97 CE; a Roman embassy is recorded in 166 CE, though its status is debated.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Sino-Roman_relations"
+    ]
+  },
+  {
+    "id": "roman-empire--sangam--trade",
+    "a": "roman-empire",
+    "b": "sangam",
+    "kind": "trade",
+    "tier": "documented",
+    "from": 1,
+    "to": 300,
+    "summary": "Roman-Tamil maritime trade through ports such as Muziris, attested by the Periplus and Roman coin hoards.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Indo-Roman_trade"
+    ]
+  },
+  {
+    "id": "roman-empire--aksum--trade",
+    "a": "roman-empire",
+    "b": "aksum",
+    "kind": "trade",
+    "tier": "documented",
+    "from": 100,
+    "to": 476,
+    "summary": "Red Sea trade through Adulis.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Kingdom_of_Aksum"
+    ]
+  },
+  {
+    "id": "aksum--sangam--trade",
+    "a": "aksum",
+    "b": "sangam",
+    "kind": "trade",
+    "tier": "plausible",
+    "from": 100,
+    "to": 300,
+    "summary": "Red Sea to Indian Ocean routes linked Aksumite ports and South India; direct Aksum-Tamil dealings are less well attested.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Periplus_of_the_Erythraean_Sea"
+    ]
+  },
+  {
+    "id": "jesus--roman-empire--political",
+    "a": "jesus",
+    "b": "roman-empire",
+    "kind": "political",
+    "tier": "documented",
+    "from": -4,
+    "to": 30,
+    "summary": "Judea was under Roman rule; Jesus was executed under the Roman prefect Pontius Pilate.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Jesus"
+    ]
+  },
+  {
+    "id": "muhammad--jesus--textual",
+    "a": "muhammad",
+    "b": "jesus",
+    "kind": "textual",
+    "tier": "documented",
+    "from": 610,
+    "to": 632,
+    "summary": "The Quran treats Jesus (Isa) as a prophet; Muhammad had dealings with Christians including a delegation from Najran.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Jesus_in_Islam"
+    ]
+  },
+  {
+    "id": "muhammad--byzantine--diplomatic",
+    "a": "muhammad",
+    "b": "byzantine",
+    "kind": "diplomatic",
+    "tier": "documented",
+    "from": 614,
+    "to": 632,
+    "summary": "The Quran refers to the Byzantine-Sasanian war; Muhammad sent a letter to Heraclius and the Battle of Mu'tah was fought in 629.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Muhammad"
+    ]
+  },
+  {
+    "id": "muhammad--sasanian--diplomatic",
+    "a": "muhammad",
+    "b": "sasanian",
+    "kind": "diplomatic",
+    "tier": "documented",
+    "from": 628,
+    "to": 632,
+    "summary": "Muhammad's letter to Khosrow II is recorded in the early tradition.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Muhammad"
+    ]
+  },
+  {
+    "id": "muhammad--aksum--migration",
+    "a": "muhammad",
+    "b": "aksum",
+    "kind": "migration",
+    "tier": "documented",
+    "from": 615,
+    "to": 632,
+    "summary": "The First Hijra: Muslims sought refuge with the Aksumite ruler in 615.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/First_Hijra"
+    ]
+  },
+  {
+    "id": "muhammad--khalid--military",
+    "a": "muhammad",
+    "b": "khalid",
+    "kind": "military",
+    "tier": "documented",
+    "from": 625,
+    "to": 632,
+    "summary": "Khalid fought against the Muslims at Uhud (625), later accepted Islam and served Muhammad.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Khalid_ibn_al-Walid"
+    ]
+  },
+  {
+    "id": "muhammad--silk-road--trade",
+    "a": "muhammad",
+    "b": "silk-road",
+    "kind": "trade",
+    "tier": "plausible",
+    "from": 570,
+    "to": 632,
+    "summary": "Meccan caravan trade linked Yemen and Syria and carried goods of Indian and eastern origin. Direct knowledge of India or China is not documented.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Silk_Road"
+    ]
+  },
+  {
+    "id": "khalid--rashidun--political",
+    "a": "khalid",
+    "b": "rashidun",
+    "kind": "political",
+    "tier": "documented",
+    "from": 632,
+    "to": 642,
+    "summary": "Khalid commanded Rashidun armies in Iraq and Syria.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Khalid_ibn_al-Walid"
+    ]
+  },
+  {
+    "id": "khalid--sasanian--military",
+    "a": "khalid",
+    "b": "sasanian",
+    "kind": "military",
+    "tier": "documented",
+    "from": 633,
+    "to": 634,
+    "summary": "Campaign in southern Iraq against Sasanian forces.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Muslim_conquest_of_Persia"
+    ]
+  },
+  {
+    "id": "khalid--byzantine--military",
+    "a": "khalid",
+    "b": "byzantine",
+    "kind": "military",
+    "tier": "documented",
+    "from": 634,
+    "to": 636,
+    "summary": "Syrian campaign culminating in the Battle of Yarmouk (636).",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Byzantine%E2%80%93Arab_wars"
+    ]
+  },
+  {
+    "id": "rashidun--byzantine--military",
+    "a": "rashidun",
+    "b": "byzantine",
+    "kind": "military",
+    "tier": "documented",
+    "from": 634,
+    "to": 661,
+    "summary": "Muslim conquest of Syria and Egypt.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Byzantine%E2%80%93Arab_wars"
+    ]
+  },
+  {
+    "id": "rashidun--sasanian--military",
+    "a": "rashidun",
+    "b": "sasanian",
+    "kind": "military",
+    "tier": "documented",
+    "from": 633,
+    "to": 651,
+    "summary": "Muslim conquest of Persia ended the Sasanian state.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Muslim_conquest_of_Persia"
+    ]
+  },
+  {
+    "id": "rashidun--tang--diplomatic",
+    "a": "rashidun",
+    "b": "tang",
+    "kind": "diplomatic",
+    "tier": "documented",
+    "from": 651,
+    "to": 661,
+    "summary": "Chinese records describe an envoy from the Arab 'Dashi' state to Emperor Gaozong in 651.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tang_dynasty"
+    ]
+  },
+  {
+    "id": "rashidun--pallava--trade",
+    "a": "rashidun",
+    "b": "pallava",
+    "kind": "trade",
+    "tier": "plausible",
+    "from": 632,
+    "to": 661,
+    "summary": "Arab merchants had long traded on India's coasts; no record shows the caliphate itself dealing with the Pallavas.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Maritime_Silk_Road"
+    ]
+  },
+  {
+    "id": "sasanian--silk-road--trade",
+    "a": "sasanian",
+    "b": "silk-road",
+    "kind": "trade",
+    "tier": "documented",
+    "from": 224,
+    "to": 651,
+    "summary": "Sasanian Persia controlled key overland stretches of the Silk Road.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Silk_Road"
+    ]
+  },
+  {
+    "id": "umayyad--tang--diplomatic",
+    "a": "umayyad",
+    "b": "tang",
+    "kind": "diplomatic",
+    "tier": "documented",
+    "from": 661,
+    "to": 750,
+    "summary": "Continued Arab embassies to the Tang court.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tang_dynasty"
+    ]
+  },
+  {
+    "id": "abbasid--tang--military",
+    "a": "abbasid",
+    "b": "tang",
+    "kind": "military",
+    "tier": "documented",
+    "from": 750,
+    "to": 907,
+    "summary": "Battle of Talas (751) and continuing trade and embassies.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Battle_of_Talas"
+    ]
+  },
+  {
+    "id": "abbasid--silk-road--trade",
+    "a": "abbasid",
+    "b": "silk-road",
+    "kind": "trade",
+    "tier": "documented",
+    "from": 750,
+    "to": 1258,
+    "summary": "Baghdad was a hub of Eurasian trade.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Silk_Road"
+    ]
+  },
+  {
+    "id": "abbasid--chola--trade",
+    "a": "abbasid",
+    "b": "chola",
+    "kind": "trade",
+    "tier": "documented",
+    "from": 848,
+    "to": 1258,
+    "summary": "Arab and Persian merchants traded on the Tamil coasts. This is merchant-level contact, not necessarily state-to-state.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Maritime_Silk_Road"
+    ]
+  },
+  {
+    "id": "chola--silk-road--trade",
+    "a": "chola",
+    "b": "silk-road",
+    "kind": "trade",
+    "tier": "documented",
+    "from": 848,
+    "to": 1279,
+    "summary": "Chola maritime trade formed part of the Maritime Silk Road.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Chola_dynasty"
+    ]
+  },
+  {
+    "id": "tang--silk-road--trade",
+    "a": "tang",
+    "b": "silk-road",
+    "kind": "trade",
+    "tier": "documented",
+    "from": 618,
+    "to": 907,
+    "summary": "Chang'an was the eastern terminus of the Silk Road.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tang_dynasty"
+    ]
+  },
+  {
+    "id": "tang--asuka--diplomatic",
+    "a": "tang",
+    "b": "asuka",
+    "kind": "diplomatic",
+    "tier": "documented",
+    "from": 630,
+    "to": 710,
+    "summary": "Japanese embassies to Tang China began in 630.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Japanese_missions_to_Tang_China"
+    ]
+  },
+  {
+    "id": "tang--heian--diplomatic",
+    "a": "tang",
+    "b": "heian",
+    "kind": "diplomatic",
+    "tier": "documented",
+    "from": 794,
+    "to": 894,
+    "summary": "Embassies continued until they were suspended in 894.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Japanese_missions_to_Tang_China"
+    ]
+  },
+  {
+    "id": "mongol--abbasid--military",
+    "a": "mongol",
+    "b": "abbasid",
+    "kind": "military",
+    "tier": "documented",
+    "from": 1250,
+    "to": 1258,
+    "summary": "The Mongol sack of Baghdad ended the Abbasid caliphate there.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Siege_of_Baghdad_(1258)"
+    ]
+  },
+  {
+    "id": "mongol--silk-road--political",
+    "a": "mongol",
+    "b": "silk-road",
+    "kind": "political",
+    "tier": "documented",
+    "from": 1206,
+    "to": 1368,
+    "summary": "The Mongol Empire unified most of the overland routes.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Mongol_Empire"
+    ]
+  },
+  {
+    "id": "zheng-he--silk-road--trade",
+    "a": "zheng-he",
+    "b": "silk-road",
+    "kind": "trade",
+    "tier": "documented",
+    "from": 1405,
+    "to": 1433,
+    "summary": "Treasure voyages extended maritime links to Southeast Asia, India, Arabia and East Africa.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Zheng_He"
+    ]
+  },
+  {
+    "id": "mansa-musa--mali-empire--political",
+    "a": "mansa-musa",
+    "b": "mali-empire",
+    "kind": "political",
+    "tier": "documented",
+    "from": 1312,
+    "to": 1337,
+    "summary": "Mansa Musa ruled the Mali Empire.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Mansa_Musa"
+    ]
+  },
+  {
+    "id": "mali-empire--ghana-empire--legacy",
+    "a": "mali-empire",
+    "b": "ghana-empire",
+    "kind": "legacy",
+    "tier": "documented",
+    "from": 1230,
+    "to": 1240,
+    "summary": "Mali rose in the 1230s on lands formerly dominated by Ghana, which had declined by about 1100.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Mali_Empire"
+    ]
+  },
+  {
+    "id": "napoleon--egypt-campaign--political",
+    "a": "napoleon",
+    "b": "egypt-campaign",
+    "kind": "political",
+    "tier": "documented",
+    "from": 1798,
+    "to": 1801,
+    "summary": "Napoleon led the expedition.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/French_campaign_in_Egypt_and_Syria"
+    ]
+  },
+  {
+    "id": "egypt-campaign--ottoman--military",
+    "a": "egypt-campaign",
+    "b": "ottoman",
+    "kind": "military",
+    "tier": "documented",
+    "from": 1798,
+    "to": 1801,
+    "summary": "Egypt was an Ottoman province; the Ottomans declared war on France.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/French_campaign_in_Egypt_and_Syria"
+    ]
+  },
+  {
+    "id": "napoleon--ottoman--military",
+    "a": "napoleon",
+    "b": "ottoman",
+    "kind": "military",
+    "tier": "documented",
+    "from": 1798,
+    "to": 1815,
+    "summary": "Wars and diplomacy with the Ottoman state.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Napoleon"
+    ]
+  },
+  {
+    "id": "napoleon--muhammad--textual",
+    "a": "napoleon",
+    "b": "muhammad",
+    "kind": "textual",
+    "tier": "plausible",
+    "from": 1798,
+    "to": 1801,
+    "summary": "Napoleon's Egyptian proclamations addressed Muslims in Islamic idiom and scholars accompanied the expedition. How deeply Napoleon himself knew Islam is disputed.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/French_campaign_in_Egypt_and_Syria"
+    ]
+  },
+  {
+    "id": "napoleon--ancient-egypt--legacy",
+    "a": "napoleon",
+    "b": "ancient-egypt",
+    "kind": "legacy",
+    "tier": "documented",
+    "from": 1798,
+    "to": 1801,
+    "summary": "The expedition's scholars documented ancient monuments; the Rosetta Stone was found in 1799.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Rosetta_Stone"
+    ]
+  },
+  {
+    "id": "napoleon--industrial-revolution--trade",
+    "a": "napoleon",
+    "b": "industrial-revolution",
+    "kind": "trade",
+    "tier": "documented",
+    "from": 1806,
+    "to": 1814,
+    "summary": "The Continental System was an economic blockade aimed at British commerce.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Continental_System"
+    ]
+  },
+  {
+    "id": "aztec--teotihuacan--legacy",
+    "a": "aztec",
+    "b": "teotihuacan",
+    "kind": "legacy",
+    "tier": "documented",
+    "from": 1428,
+    "to": 1521,
+    "summary": "The Mexica venerated the ruins of Teotihuacan and gave the city its name.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Teotihuacan"
+    ]
+  },
+  {
+    "id": "teotihuacan--classic-maya--political",
+    "a": "teotihuacan",
+    "b": "classic-maya",
+    "kind": "political",
+    "tier": "documented",
+    "from": 378,
+    "to": 550,
+    "summary": "Teotihuacan's influence on Tikal from 378 CE is recorded in Maya inscriptions.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Teotihuacan"
+    ]
+  },
+  {
+    "id": "cahokia--haudenosaunee--trade",
+    "a": "cahokia",
+    "b": "haudenosaunee",
+    "kind": "trade",
+    "tier": "plausible",
+    "from": 1050,
+    "to": 1350,
+    "summary": "Exchange networks spanned the eastern woodlands; whether Cahokia influenced Iroquoian peoples is contested.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Cahokia"
+    ]
+  },
+  {
+    "id": "lapita--austronesian--migration",
+    "a": "lapita",
+    "b": "austronesian",
+    "kind": "migration",
+    "tier": "documented",
+    "from": -1600,
+    "to": -500,
+    "summary": "Lapita people were part of the Austronesian expansion.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Lapita_culture"
+    ]
+  },
+  {
+    "id": "austronesian--samoa--migration",
+    "a": "austronesian",
+    "b": "samoa",
+    "kind": "migration",
+    "tier": "documented",
+    "from": -1000,
+    "to": -500,
+    "summary": "Samoa was settled from the west by Lapita voyagers.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/History_of_Samoa"
+    ]
+  },
+  {
+    "id": "samoa--samoa-settlement--migration",
+    "a": "samoa",
+    "b": "samoa-settlement",
+    "kind": "migration",
+    "tier": "documented",
+    "from": -950,
+    "to": -650,
+    "summary": "The settlement event founded Samoan society.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/History_of_Samoa"
+    ]
+  },
+  {
+    "id": "austronesian--nz-settlement--migration",
+    "a": "austronesian",
+    "b": "nz-settlement",
+    "kind": "migration",
+    "tier": "documented",
+    "from": 1250,
+    "to": 1300,
+    "summary": "Eastern Polynesian voyagers settled New Zealand.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/History_of_New_Zealand"
+    ]
+  },
+  {
+    "id": "austronesian--han--trade",
+    "a": "austronesian",
+    "b": "han",
+    "kind": "trade",
+    "tier": "plausible",
+    "from": -111,
+    "to": 220,
+    "summary": "Austronesian-speaking maritime peoples traded in Southeast Asia, which Han China reached after annexing Jiaozhi (111 BCE). The Pacific lay far beyond.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Austronesian_peoples"
+    ]
+  },
+  {
+    "id": "austronesian--sangam--trade",
+    "a": "austronesian",
+    "b": "sangam",
+    "kind": "trade",
+    "tier": "plausible",
+    "from": 0,
+    "to": 300,
+    "summary": "Austronesian sailors crossed the Indian Ocean in this period; contact with South India is plausible but thinly documented.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Austronesian_peoples"
+    ]
+  },
+  {
+    "id": "shang--zhou--military",
+    "a": "shang",
+    "b": "zhou",
+    "kind": "military",
+    "tier": "documented",
+    "from": -1050,
+    "to": -1040,
+    "summary": "Zhou conquest of Shang.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Zhou_dynasty"
+    ]
+  },
+  {
+    "id": "achaemenid--alexander--military",
+    "a": "achaemenid",
+    "b": "alexander",
+    "kind": "military",
+    "tier": "documented",
+    "from": -334,
+    "to": -330,
+    "summary": "Alexander's conquest of the Persian Empire.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Alexander_the_Great"
+    ]
+  },
+  {
+    "id": "alexander--classical-greece--political",
+    "a": "alexander",
+    "b": "classical-greece",
+    "kind": "political",
+    "tier": "documented",
+    "from": -356,
+    "to": -323,
+    "summary": "Alexander's Macedon dominated Greece.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Alexander_the_Great"
+    ]
+  },
+  {
+    "id": "achaemenid--classical-greece--military",
+    "a": "achaemenid",
+    "b": "classical-greece",
+    "kind": "military",
+    "tier": "documented",
+    "from": -480,
+    "to": -449,
+    "summary": "The Greco-Persian Wars.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Greco-Persian_Wars"
+    ]
+  },
+  {
+    "id": "alexander--ancient-egypt--military",
+    "a": "alexander",
+    "b": "ancient-egypt",
+    "kind": "military",
+    "tier": "documented",
+    "from": -332,
+    "to": -323,
+    "summary": "Alexander took Egypt from the Persians in 332 BCE.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Alexander_the_Great"
+    ]
+  },
+  {
+    "id": "alexander--maurya--legacy",
+    "a": "alexander",
+    "b": "maurya",
+    "kind": "legacy",
+    "tier": "plausible",
+    "from": -326,
+    "to": -322,
+    "summary": "Plutarch reports that the young Chandragupta met Alexander in India. Historians treat this cautiously.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Maurya_Empire"
+    ]
+  },
+  {
+    "id": "ancient-egypt--achaemenid--military",
+    "a": "ancient-egypt",
+    "b": "achaemenid",
+    "kind": "military",
+    "tier": "documented",
+    "from": -525,
+    "to": -404,
+    "summary": "Persian conquest and rule of Egypt.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Achaemenid_Empire"
+    ]
+  },
+  {
+    "id": "ancient-egypt--roman-republic--military",
+    "a": "ancient-egypt",
+    "b": "roman-republic",
+    "kind": "military",
+    "tier": "documented",
+    "from": -48,
+    "to": -30,
+    "summary": "Rome annexed Egypt after Actium.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Ancient_Egypt"
+    ]
+  },
+  {
+    "id": "roman-empire--byzantine--political",
+    "a": "roman-empire",
+    "b": "byzantine",
+    "kind": "political",
+    "tier": "documented",
+    "from": 330,
+    "to": 476,
+    "summary": "The eastern half continued the Roman state.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Byzantine_Empire"
+    ]
+  },
+  {
+    "id": "sumer--uruk--political",
+    "a": "sumer",
+    "b": "uruk",
+    "kind": "political",
+    "tier": "documented",
+    "from": -3500,
+    "to": -3100,
+    "summary": "Uruk was a leading Sumerian city.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Uruk"
+    ]
+  },
+  {
+    "id": "uruk--cuneiform--cultural",
+    "a": "uruk",
+    "b": "cuneiform",
+    "kind": "cultural",
+    "tier": "documented",
+    "from": -3400,
+    "to": -3200,
+    "summary": "Earliest proto-cuneiform tablets come from Uruk.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Cuneiform"
+    ]
+  },
+  {
+    "id": "sumer--indus--trade",
+    "a": "sumer",
+    "b": "indus",
+    "kind": "trade",
+    "tier": "documented",
+    "from": -2600,
+    "to": -2004,
+    "summary": "Mesopotamian texts record trade with 'Meluhha'; Indus seals have been found at Ur.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Indus_Valley_Civilisation"
+    ]
+  },
+  {
+    "id": "sumer--ancient-egypt--cultural",
+    "a": "sumer",
+    "b": "ancient-egypt",
+    "kind": "cultural",
+    "tier": "plausible",
+    "from": -3300,
+    "to": -3100,
+    "summary": "Mesopotamian influence on Predynastic Egyptian art and seals is debated.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Ancient_Egypt"
+    ]
+  },
+  {
+    "id": "neanderthals--homo-sapiens--biological",
+    "a": "neanderthals",
+    "b": "homo-sapiens",
+    "kind": "biological",
+    "tier": "documented",
+    "from": -60000,
+    "to": -40000,
+    "summary": "Interbreeding is shown by Neanderthal DNA in non-African genomes.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Neanderthal"
+    ]
+  },
+  {
+    "id": "gobekli-tepe--neolithic-near-east--cultural",
+    "a": "gobekli-tepe",
+    "b": "neolithic-near-east",
+    "kind": "cultural",
+    "tier": "documented",
+    "from": -9500,
+    "to": -8000,
+    "summary": "Monumental building by communities at the cusp of farming.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/G%C3%B6bekli_Tepe"
+    ]
+  },
+  {
+    "id": "ww1--ottoman--military",
+    "a": "ww1",
+    "b": "ottoman",
+    "kind": "military",
+    "tier": "documented",
+    "from": 1914,
+    "to": 1918,
+    "summary": "The Ottoman Empire fought with the Central Powers.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/World_War_I"
+    ]
+  }
+]

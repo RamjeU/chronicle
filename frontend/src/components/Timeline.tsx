@@ -14,6 +14,7 @@ interface Props {
   entities: Entity[]
   mode: ScaleMode
   selected: string[]
+  linked: Set<string>
   sliceYear: number | null
   onToggle: (id: string) => void
   onSlice: (year: number | null) => void
@@ -28,7 +29,7 @@ interface Placed {
   labelX: number
 }
 
-export function Timeline({ entities, mode, selected, sliceYear, onToggle, onSlice }: Props) {
+export function Timeline({ entities, mode, selected, linked, sliceYear, onToggle, onSlice }: Props) {
   const scale = SCALES[mode]
   const wrapRef = useRef<HTMLDivElement>(null)
   const [width, setWidth] = useState(900)
@@ -213,7 +214,7 @@ export function Timeline({ entities, mode, selected, sliceYear, onToggle, onSlic
               return (
                 <g
                   key={p.e.id}
-                  className={`item t-${p.e.type}${sel ? ' sel' : ''}`}
+                  className={`item t-${p.e.type}${sel ? ' sel' : ''}${linked.has(p.e.id) ? ' linked' : ''}`}
                   onClick={() => !moved.current && onToggle(p.e.id)}
                   onMouseEnter={(ev) => {
                     const r = wrapRef.current!.getBoundingClientRect()

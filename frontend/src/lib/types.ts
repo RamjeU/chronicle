@@ -24,3 +24,24 @@ export interface Entity {
   sources: string[]
   notes: string
 }
+
+export const CONTACT_KINDS = [
+  'trade', 'diplomatic', 'military', 'political', 'migration', 'textual', 'legacy', 'cultural', 'biological',
+] as const
+export type ContactKind = (typeof CONTACT_KINDS)[number]
+
+/** documented = attested in sources; plausible = fits the evidence but is not directly attested. */
+export type Tier = 'documented' | 'plausible'
+
+/** A link along which knowledge could have passed, active during [from, to]. */
+export interface Contact {
+  id: string
+  a: string
+  b: string
+  kind: ContactKind
+  tier: Tier
+  from: number
+  to: number
+  summary: string
+  sources: string[]
+}

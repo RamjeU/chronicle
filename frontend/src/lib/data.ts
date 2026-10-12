@@ -1,5 +1,7 @@
-import raw from '../../../data/entities.json'
-import type { Entity } from './types'
+import rawEntities from '../../../data/entities.json'
+import rawContacts from '../../../data/contacts.json'
+import type { Contact, Entity } from './types'
 
-// Source of truth lives in /data/entities.json (validated by scripts/validate.py).
-export const ENTITIES = raw as unknown as Entity[]
+// Source of truth lives in /data (validated by scripts/validate.py).
+export const ENTITIES = rawEntities as unknown as Entity[]
+export const CONTACTS = rawContacts as unknown as Contact[]

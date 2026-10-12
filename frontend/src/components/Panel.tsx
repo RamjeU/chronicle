@@ -1,6 +1,59 @@
-import type { Entity } from '../lib/types'
+import type { Contact, Entity } from '../lib/types'
 import { REGIONS } from '../lib/types'
 import { compare, fmtSpan, fmtYear } from '../lib/time'
+import { assess, connectionsOf, type Assessment } from '../lib/contact'
+import { CONTACTS, ENTITIES } from '../lib/data'
+
+const span = (c: { from: number; to: number }) => (c.from === c.to ? fmtYear(c.from) : `${fmtYear(c.from)} to ${fmtYear(c.to)}`)
+
+function TierBadge({ tier }: { tier: Contact['tier'] }) {
+  return <span className={`tier tier-${tier}`}>{tier}</span>
+}
+
+function Knowledge({ result }: { result: Assessment }) {
+  return (
+    <div className={`know k-${result.outcome}`}>
+      <h3>Could they have known?</h3>
+      <p className="headline">{result.headline}</p>
+      {result.window && <p className="muted">Link active: {span({ from: result.window[0], to: result.window[1] })}.</p>}
+      {result.steps.length > 0 && (
+        <ol className="chain">
+          {result.steps.map((st) => (
+            <li key={st.contact.id}>
+              <div><strong>{st.from.name}</strong> → <strong>{st.to.name}</strong></div>
+              <div className="muted">{st.contact.kind} · {span(st.contact)} <TierBadge tier={st.contact.tier} /></div>
+              <div>{st.contact.summary}</div>
+              {st.contact.sources.map((u) => (
+                <a key={u} href={u} target="_blank" rel="noreferrer" className="src">Source ↗</a>
+              ))}
+            </li>
+          ))}
+        </ol>
+      )}
+      {result.caveat && <p className="muted">{result.caveat}</p>}
+    </div>
+  )
+}
+
+function Connections({ id }: { id: string }) {
+  const list = connectionsOf(id, CONTACTS)
+  if (!list.length) return <p className="muted">No recorded connections yet.</p>
+  return (
+    <div className="conns">
+      <h3>Recorded connections</h3>
+      <ul>
+        {list.map((c) => {
+          const o = ENTITIES.find((e) => e.id === (c.a === id ? c.b : c.a))
+          return (
+            <li key={c.id}>
+              <strong>{o?.name}</strong> <span className="muted">{c.kind}, {span(c)}</span> <TierBadge tier={c.tier} />
+            </li>
+          )
+        })}
+      </ul>
+    </div>
+  )
+}
 
 const VERDICT_TEXT = {
   definite: 'Contemporaries: they existed at the same time, even allowing for date uncertainty.',
@@ -21,7 +74,8 @@ function Detail({ e, onClear }: { e: Entity; onClear: () => void }) {
       {e.sources.map((s) => (
         <a key={s} href={s} target="_blank" rel="noreferrer" className="src">Source ↗</a>
       ))}
-      <p className="hint">Select a second item to compare the two.</p>
+      <Connections id={e.id} />
+      <p className="hint">Select a second item to compare the two. Linked items are outlined on the timeline.</p>
     </section>
   )
 }
@@ -29,6 +83,7 @@ function Detail({ e, onClear }: { e: Entity; onClear: () => void }) {
 function Compare({ a, b, onClear }: { a: Entity; b: Entity; onClear: () => void }) {
   const c = compare(a, b)
   const gap = c.gapYears
+  const k = assess(a, b, ENTITIES, CONTACTS)
   return (
     <section className="card">
       <header>
@@ -43,7 +98,8 @@ function Compare({ a, b, onClear }: { a: Entity; b: Entity; onClear: () => void 
         <p className="muted">Shared window: {fmtYear(c.overlap[0])} to {fmtYear(c.overlap[1])} ({(c.overlap[1] - c.overlap[0]).toLocaleString('en-CA')} years).</p>
       )}
       {!c.overlap && <p className="muted">Gap between them: about {gap.toLocaleString('en-CA')} years.</p>}
-      <p className="hint">Overlapping in time is necessary for direct knowledge, not sufficient. Geography and trade links (the contact layer) come next.</p>
+      <Knowledge result={k} />
+      <p className="hint">Dates alone never prove contact. The contact links are hand-curated from the cited sources, and "plausible" means consistent with the evidence, not attested.</p>
     </section>
   )
 }

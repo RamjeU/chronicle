@@ -1087,5 +1087,92 @@
       "https://en.wikipedia.org/wiki/History_of_the_Internet"
     ],
     "notes": "ARPANET adopted TCP/IP on 1 January 1983."
+  },
+  {
+    "id": "byzantine",
+    "name": "Byzantine Empire (Eastern Roman)",
+    "type": "civilization",
+    "region": "Europe",
+    "start": {
+      "year": 330,
+      "uncertainty": 0
+    },
+    "end": {
+      "year": 1453,
+      "uncertainty": 0
+    },
+    "sources": [
+      "https://en.wikipedia.org/wiki/Byzantine_Empire"
+    ],
+    "notes": "Continuation of the Roman state in the east; start date follows the founding of Constantinople."
+  },
+  {
+    "id": "sasanian",
+    "name": "Sasanian Empire",
+    "type": "civilization",
+    "region": "Middle East",
+    "start": {
+      "year": 224,
+      "uncertainty": 0
+    },
+    "end": {
+      "year": 651,
+      "uncertainty": 0
+    },
+    "sources": [
+      "https://en.wikipedia.org/wiki/Sasanian_Empire"
+    ],
+    "notes": "Last pre-Islamic Persian empire."
+  },
+  {
+    "id": "pallava",
+    "name": "Pallava dynasty",
+    "type": "civilization",
+    "region": "South Asia",
+    "start": {
+      "year": 275,
+      "uncertainty": 25
+    },
+    "end": {
+      "year": 897,
+      "uncertainty": 0
+    },
+    "sources": [
+      "https://en.wikipedia.org/wiki/Pallava_dynasty"
+    ],
+    "notes": "Tamil-region dynasty centred on Kanchipuram, between the Sangam era and the Cholas."
+  },
+  {
+    "id": "austronesian",
+    "name": "Austronesian expansion",
+    "type": "period",
+    "region": "Oceania",
+    "start": {
+      "year": -3000,
+      "uncertainty": 500
+    },
+    "end": {
+      "year": 1280,
+      "uncertainty": 20
+    },
+    "sources": [
+      "https://en.wikipedia.org/wiki/Austronesian_peoples"
+    ],
+    "notes": "Seafaring migrations from Taiwan and southern China into Southeast Asia, the Pacific and Madagascar."
+  },
+  {
+    "id": "samoa",
+    "name": "Samoan society",
+    "type": "civilization",
+    "region": "Oceania",
+    "start": {
+      "year": -800,
+      "uncertainty": 150
+    },
+    "end": null,
+    "sources": [
+      "https://en.wikipedia.org/wiki/History_of_Samoa"
+    ],
+    "notes": "Descended from Lapita settlers; Polynesian culture developed in place afterwards."
   }
 ]

@@ -75,3 +75,15 @@
 .sentence { font-family: 'Iowan Old Style', Palatino, Georgia, serif; font-size: 15px; }
 .verdict { padding: 8px 10px; border-radius: 8px; border-left: 4px solid; background: var(--surface-2); }
 .v-definite { border-color: #7e9c68; } .v-possible { border-color: #d9b44a; } .v-none { border-color: #c9784a; }
+
+.item.linked .bar { stroke: var(--accent); stroke-width: 2; stroke-dasharray: 4 2; opacity: 1; }
+.know { margin-top: 12px; padding-top: 10px; border-top: 1px solid var(--line); }
+.know h3 { margin-top: 0; }
+.headline { font-family: 'Iowan Old Style', Palatino, Georgia, serif; font-size: 15px; margin: 4px 0 6px; }
+.chain { margin: 8px 0 0; padding-left: 20px; display: flex; flex-direction: column; gap: 10px; }
+.chain li::marker { color: var(--accent); font-weight: 700; }
+.tier { display: inline-block; padding: 0 7px; border-radius: 999px; font-size: 11px; border: 1px solid; text-transform: uppercase; letter-spacing: 0.04em; }
+.tier-documented { color: #9bc17f; border-color: #9bc17f; }
+.tier-plausible { color: #e0b24a; border-color: #e0b24a; }
+.conns ul { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 6px; }
+.conns h3 { margin-top: 12px; }
