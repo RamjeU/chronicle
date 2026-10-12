@@ -1,122 +1,80 @@
-import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
+import { useMemo, useState } from 'react'
+import { Timeline } from './components/Timeline'
+import { Panel } from './components/Panel'
+import { ENTITIES } from './lib/data'
+import { ENTITY_TYPES, type EntityType } from './lib/types'
+import type { ScaleMode } from './lib/scale'
+import { isAlive } from './lib/time'
 import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
+export default function App() {
+  const [mode, setMode] = useState<ScaleMode>('log')
+  const [query, setQuery] = useState('')
+  const [hiddenTypes, setHiddenTypes] = useState<Set<EntityType>>(new Set())
+  const [selected, setSelected] = useState<string[]>([])
+  const [sliceYear, setSliceYear] = useState<number | null>(null)
+
+  const visible = useMemo(() => {
+    const q = query.trim().toLowerCase()
+    return ENTITIES.filter((e) => !hiddenTypes.has(e.type) && (!q || e.name.toLowerCase().includes(q)))
+  }, [query, hiddenTypes])
+
+  const selectedEntities = selected.map((id) => ENTITIES.find((e) => e.id === id)!).filter(Boolean)
+  const alive = useMemo(() => (sliceYear === null ? [] : visible.filter((e) => isAlive(e, sliceYear))), [visible, sliceYear])
+
+  const toggle = (id: string) =>
+    setSelected((s) => (s.includes(id) ? s.filter((x) => x !== id) : [...s, id].slice(-2)))
+
+  const toggleType = (t: EntityType) =>
+    setHiddenTypes((h) => {
+      const n = new Set(h)
+      if (n.has(t)) n.delete(t)
+      else n.add(t)
+      return n
+    })
 
   return (
-    <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
+    <div className="app">
+      <header className="top">
         <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.tsx</code> and save to test <code>HMR</code>
-          </p>
+          <h1>Chronicle</h1>
+          <p>Who existed when, and who could have known whom. {ENTITIES.length} entries and growing.</p>
         </div>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
-
-      <div className="ticks"></div>
-
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
-          </ul>
+        <div className="controls">
+          <input type="search" placeholder="Filter by name…" value={query} onChange={(e) => setQuery(e.target.value)} />
+          <div className="seg" role="group" aria-label="Time scale">
+            <button className={mode === 'log' ? 'on' : ''} onClick={() => setMode('log')}>Log scale</button>
+            <button className={mode === 'linear' ? 'on' : ''} onClick={() => setMode('linear')}>Linear</button>
+          </div>
         </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
+      </header>
 
-      <div className="ticks"></div>
-      <section id="spacer"></section>
-    </>
+      <div className="chips">
+        {ENTITY_TYPES.map((t) => (
+          <button key={t} className={`chip t-${t}${hiddenTypes.has(t) ? ' off' : ''}`} onClick={() => toggleType(t)}>
+            {t}
+          </button>
+        ))}
+      </div>
+
+      <main className="main">
+        <Timeline
+          key={mode}
+          entities={visible}
+          mode={mode}
+          selected={selected}
+          sliceYear={sliceYear}
+          onToggle={toggle}
+          onSlice={setSliceYear}
+        />
+        <Panel
+          selected={selectedEntities}
+          sliceYear={sliceYear}
+          alive={alive}
+          onClearSelection={() => setSelected([])}
+          onClearSlice={() => setSliceYear(null)}
+        />
+      </main>
+    </div>
   )
 }
-
-export default App

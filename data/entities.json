@@ -1,0 +1,1091 @@
+[
+  {
+    "id": "homo-sapiens",
+    "name": "Anatomically modern humans",
+    "type": "species",
+    "region": "Global",
+    "start": {
+      "year": -300000,
+      "uncertainty": 30000
+    },
+    "end": null,
+    "sources": [
+      "https://en.wikipedia.org/wiki/Homo_sapiens"
+    ],
+    "notes": "Earliest fossils: Jebel Irhoud, Morocco (c. 300,000 years ago). Fully 'modern' skull shape appears later."
+  },
+  {
+    "id": "neanderthals",
+    "name": "Neanderthals",
+    "type": "species",
+    "region": "Europe",
+    "start": {
+      "year": -400000,
+      "uncertainty": 50000
+    },
+    "end": {
+      "year": -40000,
+      "uncertainty": 2000
+    },
+    "sources": [
+      "https://en.wikipedia.org/wiki/Neanderthal"
+    ],
+    "notes": "Interbred with Homo sapiens; most non-Africans carry roughly 1-2% Neanderthal DNA."
+  },
+  {
+    "id": "last-glacial-maximum",
+    "name": "Last Glacial Maximum",
+    "type": "period",
+    "region": "Global",
+    "start": {
+      "year": -26500,
+      "uncertainty": 1500
+    },
+    "end": {
+      "year": -19000,
+      "uncertainty": 1000
+    },
+    "sources": [
+      "https://en.wikipedia.org/wiki/Last_Glacial_Maximum"
+    ],
+    "notes": "Peak extent of the continental ice sheets in the last ice age."
+  },
+  {
+    "id": "neolithic-near-east",
+    "name": "Neolithic transition (Fertile Crescent)",
+    "type": "period",
+    "region": "Middle East",
+    "start": {
+      "year": -10000,
+      "uncertainty": 500
+    },
+    "end": {
+      "year": -4500,
+      "uncertainty": 500
+    },
+    "sources": [
+      "https://en.wikipedia.org/wiki/Neolithic_Revolution"
+    ],
+    "notes": "Farming arose independently elsewhere too: China, New Guinea, Mesoamerica, the Andes."
+  },
+  {
+    "id": "gobekli-tepe",
+    "name": "Göbekli Tepe",
+    "type": "civilization",
+    "region": "Middle East",
+    "start": {
+      "year": -9500,
+      "uncertainty": 300
+    },
+    "end": {
+      "year": -8000,
+      "uncertainty": 300
+    },
+    "sources": [
+      "https://en.wikipedia.org/wiki/G%C3%B6bekli_Tepe"
+    ],
+    "notes": "Monumental stone enclosures built by hunter-gatherers, before farming was established."
+  },
+  {
+    "id": "uruk",
+    "name": "Uruk",
+    "type": "civilization",
+    "region": "Middle East",
+    "start": {
+      "year": -4000,
+      "uncertainty": 300
+    },
+    "end": {
+      "year": -3100,
+      "uncertainty": 100
+    },
+    "sources": [
+      "https://en.wikipedia.org/wiki/Uruk"
+    ],
+    "notes": "One of the earliest true cities; the Uruk period is a standard marker for early urbanisation."
+  },
+  {
+    "id": "cuneiform",
+    "name": "Invention of cuneiform writing",
+    "type": "technology",
+    "region": "Middle East",
+    "start": {
+      "year": -3300,
+      "uncertainty": 200
+    },
+    "end": {
+      "year": -3300,
+      "uncertainty": 200
+    },
+    "sources": [
+      "https://en.wikipedia.org/wiki/Cuneiform"
+    ],
+    "notes": "Earliest proto-cuneiform tablets come from Uruk."
+  },
+  {
+    "id": "sumer",
+    "name": "Sumerian city-states",
+    "type": "civilization",
+    "region": "Middle East",
+    "start": {
+      "year": -3500,
+      "uncertainty": 500
+    },
+    "end": {
+      "year": -2004,
+      "uncertainty": 10
+    },
+    "sources": [
+      "https://en.wikipedia.org/wiki/Sumer"
+    ],
+    "notes": "End date is the fall of Ur III."
+  },
+  {
+    "id": "ancient-egypt",
+    "name": "Ancient Egypt (Pharaonic)",
+    "type": "civilization",
+    "region": "Africa",
+    "start": {
+      "year": -3100,
+      "uncertainty": 100
+    },
+    "end": {
+      "year": -30,
+      "uncertainty": 0
+    },
+    "sources": [
+      "https://en.wikipedia.org/wiki/Ancient_Egypt"
+    ],
+    "notes": "From unification to the Roman annexation after Cleopatra VII."
+  },
+  {
+    "id": "caral",
+    "name": "Caral-Supe (Norte Chico)",
+    "type": "civilization",
+    "region": "Americas",
+    "start": {
+      "year": -3000,
+      "uncertainty": 200
+    },
+    "end": {
+      "year": -1800,
+      "uncertainty": 100
+    },
+    "sources": [
+      "https://en.wikipedia.org/wiki/Caral"
+    ],
+    "notes": "Among the oldest urban centres in the Americas, on the Peruvian coast."
+  },
+  {
+    "id": "great-pyramid",
+    "name": "Great Pyramid of Giza built",
+    "type": "event",
+    "region": "Africa",
+    "start": {
+      "year": -2560,
+      "uncertainty": 30
+    },
+    "end": {
+      "year": -2560,
+      "uncertainty": 30
+    },
+    "sources": [
+      "https://en.wikipedia.org/wiki/Great_Pyramid_of_Giza"
+    ],
+    "notes": "Built for Khufu; construction took roughly two decades."
+  },
+  {
+    "id": "indus",
+    "name": "Indus Valley Civilisation (mature phase)",
+    "type": "civilization",
+    "region": "South Asia",
+    "start": {
+      "year": -2600,
+      "uncertainty": 100
+    },
+    "end": {
+      "year": -1900,
+      "uncertainty": 100
+    },
+    "sources": [
+      "https://en.wikipedia.org/wiki/Indus_Valley_Civilisation"
+    ],
+    "notes": "Script remains undeciphered."
+  },
+  {
+    "id": "shang",
+    "name": "Shang dynasty",
+    "type": "civilization",
+    "region": "East Asia",
+    "start": {
+      "year": -1600,
+      "uncertainty": 50
+    },
+    "end": {
+      "year": -1046,
+      "uncertainty": 10
+    },
+    "sources": [
+      "https://en.wikipedia.org/wiki/Shang_dynasty"
+    ],
+    "notes": "Oracle-bone inscriptions give the earliest securely attested Chinese writing."
+  },
+  {
+    "id": "olmec",
+    "name": "Olmec",
+    "type": "civilization",
+    "region": "Americas",
+    "start": {
+      "year": -1600,
+      "uncertainty": 100
+    },
+    "end": {
+      "year": -400,
+      "uncertainty": 50
+    },
+    "sources": [
+      "https://en.wikipedia.org/wiki/Olmecs"
+    ],
+    "notes": "Often called a 'mother culture' of Mesoamerica, a label scholars debate."
+  },
+  {
+    "id": "lapita",
+    "name": "Lapita culture",
+    "type": "civilization",
+    "region": "Oceania",
+    "start": {
+      "year": -1600,
+      "uncertainty": 100
+    },
+    "end": {
+      "year": -500,
+      "uncertainty": 100
+    },
+    "sources": [
+      "https://en.wikipedia.org/wiki/Lapita_culture"
+    ],
+    "notes": "Austronesian-speaking seafarers with roots traced to Taiwan and southern China."
+  },
+  {
+    "id": "samoa-settlement",
+    "name": "Lapita settlers reach Samoa",
+    "type": "event",
+    "region": "Oceania",
+    "start": {
+      "year": -800,
+      "uncertainty": 150
+    },
+    "end": {
+      "year": -800,
+      "uncertainty": 150
+    },
+    "sources": [
+      "https://en.wikipedia.org/wiki/History_of_Samoa"
+    ],
+    "notes": "Radiocarbon estimates cluster roughly 2,900 to 2,700 years ago."
+  },
+  {
+    "id": "zhou",
+    "name": "Zhou dynasty",
+    "type": "civilization",
+    "region": "East Asia",
+    "start": {
+      "year": -1046,
+      "uncertainty": 10
+    },
+    "end": {
+      "year": -256,
+      "uncertainty": 0
+    },
+    "sources": [
+      "https://en.wikipedia.org/wiki/Zhou_dynasty"
+    ],
+    "notes": "Includes the Spring and Autumn and Warring States periods."
+  },
+  {
+    "id": "achaemenid",
+    "name": "Achaemenid Persian Empire",
+    "type": "civilization",
+    "region": "Middle East",
+    "start": {
+      "year": -550,
+      "uncertainty": 0
+    },
+    "end": {
+      "year": -330,
+      "uncertainty": 0
+    },
+    "sources": [
+      "https://en.wikipedia.org/wiki/Achaemenid_Empire"
+    ],
+    "notes": "Conquered by Alexander the Great."
+  },
+  {
+    "id": "classical-greece",
+    "name": "Classical Greece",
+    "type": "period",
+    "region": "Europe",
+    "start": {
+      "year": -480,
+      "uncertainty": 0
+    },
+    "end": {
+      "year": -323,
+      "uncertainty": 0
+    },
+    "sources": [
+      "https://en.wikipedia.org/wiki/Classical_Greece"
+    ],
+    "notes": "Conventional span: end of the Persian invasions to the death of Alexander."
+  },
+  {
+    "id": "alexander",
+    "name": "Alexander the Great",
+    "type": "person",
+    "region": "Europe",
+    "start": {
+      "year": -356,
+      "uncertainty": 0
+    },
+    "end": {
+      "year": -323,
+      "uncertainty": 0
+    },
+    "sources": [
+      "https://en.wikipedia.org/wiki/Alexander_the_Great"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "roman-republic",
+    "name": "Roman Republic",
+    "type": "civilization",
+    "region": "Europe",
+    "start": {
+      "year": -509,
+      "uncertainty": 0
+    },
+    "end": {
+      "year": -27,
+      "uncertainty": 0
+    },
+    "sources": [
+      "https://en.wikipedia.org/wiki/Roman_Republic"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "maurya",
+    "name": "Maurya Empire",
+    "type": "civilization",
+    "region": "South Asia",
+    "start": {
+      "year": -322,
+      "uncertainty": 0
+    },
+    "end": {
+      "year": -185,
+      "uncertainty": 0
+    },
+    "sources": [
+      "https://en.wikipedia.org/wiki/Maurya_Empire"
+    ],
+    "notes": "Included Ashoka's reign."
+  },
+  {
+    "id": "han",
+    "name": "Han dynasty",
+    "type": "civilization",
+    "region": "East Asia",
+    "start": {
+      "year": -206,
+      "uncertainty": 0
+    },
+    "end": {
+      "year": 220,
+      "uncertainty": 0
+    },
+    "sources": [
+      "https://en.wikipedia.org/wiki/Han_dynasty"
+    ],
+    "notes": "Interrupted by Wang Mang's Xin dynasty (9-23 CE)."
+  },
+  {
+    "id": "silk-road",
+    "name": "Silk Road trade network",
+    "type": "technology",
+    "region": "Eurasia",
+    "start": {
+      "year": -130,
+      "uncertainty": 20
+    },
+    "end": {
+      "year": 1450,
+      "uncertainty": 50
+    },
+    "sources": [
+      "https://en.wikipedia.org/wiki/Silk_Road"
+    ],
+    "notes": "Start reflects Zhang Qian's missions (c. 138 BCE onward). A network, not a single road."
+  },
+  {
+    "id": "sangam",
+    "name": "Sangam period (Tamilakam)",
+    "type": "period",
+    "region": "South Asia",
+    "start": {
+      "year": -300,
+      "uncertainty": 100
+    },
+    "end": {
+      "year": 300,
+      "uncertainty": 100
+    },
+    "sources": [
+      "https://en.wikipedia.org/wiki/Sangam_period"
+    ],
+    "notes": "Classical Tamil literature; Roman-Indian maritime trade touched the Tamil coast."
+  },
+  {
+    "id": "hopewell",
+    "name": "Hopewell tradition",
+    "type": "civilization",
+    "region": "Americas",
+    "start": {
+      "year": -100,
+      "uncertainty": 100
+    },
+    "end": {
+      "year": 500,
+      "uncertainty": 50
+    },
+    "sources": [
+      "https://en.wikipedia.org/wiki/Hopewell_tradition"
+    ],
+    "notes": "Exchange network moving copper, shell and obsidian across eastern North America."
+  },
+  {
+    "id": "jesus",
+    "name": "Jesus of Nazareth",
+    "type": "person",
+    "region": "Middle East",
+    "start": {
+      "year": -4,
+      "uncertainty": 2
+    },
+    "end": {
+      "year": 30,
+      "uncertainty": 3
+    },
+    "sources": [
+      "https://en.wikipedia.org/wiki/Jesus"
+    ],
+    "notes": "Historians' consensus dating; exact years debated."
+  },
+  {
+    "id": "teotihuacan",
+    "name": "Teotihuacan",
+    "type": "civilization",
+    "region": "Americas",
+    "start": {
+      "year": -100,
+      "uncertainty": 50
+    },
+    "end": {
+      "year": 550,
+      "uncertainty": 50
+    },
+    "sources": [
+      "https://en.wikipedia.org/wiki/Teotihuacan"
+    ],
+    "notes": "Peak c. 150-450 CE."
+  },
+  {
+    "id": "roman-empire",
+    "name": "Roman Empire (Western)",
+    "type": "civilization",
+    "region": "Europe",
+    "start": {
+      "year": -27,
+      "uncertainty": 0
+    },
+    "end": {
+      "year": 476,
+      "uncertainty": 0
+    },
+    "sources": [
+      "https://en.wikipedia.org/wiki/Roman_Empire"
+    ],
+    "notes": "Eastern (Byzantine) half continued to 1453."
+  },
+  {
+    "id": "aksum",
+    "name": "Kingdom of Aksum",
+    "type": "civilization",
+    "region": "Africa",
+    "start": {
+      "year": 100,
+      "uncertainty": 50
+    },
+    "end": {
+      "year": 940,
+      "uncertainty": 20
+    },
+    "sources": [
+      "https://en.wikipedia.org/wiki/Kingdom_of_Aksum"
+    ],
+    "notes": "Major Red Sea trading power linking Rome, Arabia and India."
+  },
+  {
+    "id": "ghana-empire",
+    "name": "Ghana Empire (Wagadu)",
+    "type": "civilization",
+    "region": "Africa",
+    "start": {
+      "year": 300,
+      "uncertainty": 150
+    },
+    "end": {
+      "year": 1100,
+      "uncertainty": 50
+    },
+    "sources": [
+      "https://en.wikipedia.org/wiki/Ghana_Empire"
+    ],
+    "notes": "Origins poorly documented; dates are broad."
+  },
+  {
+    "id": "classic-maya",
+    "name": "Classic Maya",
+    "type": "civilization",
+    "region": "Americas",
+    "start": {
+      "year": 250,
+      "uncertainty": 0
+    },
+    "end": {
+      "year": 900,
+      "uncertainty": 50
+    },
+    "sources": [
+      "https://en.wikipedia.org/wiki/Maya_civilization"
+    ],
+    "notes": "Many city-states, not one empire."
+  },
+  {
+    "id": "asuka",
+    "name": "Asuka period (Japan)",
+    "type": "period",
+    "region": "East Asia",
+    "start": {
+      "year": 538,
+      "uncertainty": 0
+    },
+    "end": {
+      "year": 710,
+      "uncertainty": 0
+    },
+    "sources": [
+      "https://en.wikipedia.org/wiki/Asuka_period"
+    ],
+    "notes": "Some chronologies begin it in 592."
+  },
+  {
+    "id": "muhammad",
+    "name": "Muhammad (peace be upon him)",
+    "type": "person",
+    "region": "Middle East",
+    "start": {
+      "year": 570,
+      "uncertainty": 1
+    },
+    "end": {
+      "year": 632,
+      "uncertainty": 0
+    },
+    "sources": [
+      "https://en.wikipedia.org/wiki/Muhammad"
+    ],
+    "notes": "Dates per classical Islamic tradition and scholarly consensus."
+  },
+  {
+    "id": "khalid",
+    "name": "Khalid ibn al-Walid",
+    "type": "person",
+    "region": "Middle East",
+    "start": {
+      "year": 590,
+      "uncertainty": 5
+    },
+    "end": {
+      "year": 642,
+      "uncertainty": 0
+    },
+    "sources": [
+      "https://en.wikipedia.org/wiki/Khalid_ibn_al-Walid"
+    ],
+    "notes": "Birth year uncertain."
+  },
+  {
+    "id": "rashidun",
+    "name": "Rashidun Caliphate",
+    "type": "civilization",
+    "region": "Middle East",
+    "start": {
+      "year": 632,
+      "uncertainty": 0
+    },
+    "end": {
+      "year": 661,
+      "uncertainty": 0
+    },
+    "sources": [
+      "https://en.wikipedia.org/wiki/Rashidun_Caliphate"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "tang",
+    "name": "Tang dynasty",
+    "type": "civilization",
+    "region": "East Asia",
+    "start": {
+      "year": 618,
+      "uncertainty": 0
+    },
+    "end": {
+      "year": 907,
+      "uncertainty": 0
+    },
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tang_dynasty"
+    ],
+    "notes": "Arab merchant communities were present at Guangzhou during this era."
+  },
+  {
+    "id": "umayyad",
+    "name": "Umayyad Caliphate",
+    "type": "civilization",
+    "region": "Middle East",
+    "start": {
+      "year": 661,
+      "uncertainty": 0
+    },
+    "end": {
+      "year": 750,
+      "uncertainty": 0
+    },
+    "sources": [
+      "https://en.wikipedia.org/wiki/Umayyad_Caliphate"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "abbasid",
+    "name": "Abbasid Caliphate",
+    "type": "civilization",
+    "region": "Middle East",
+    "start": {
+      "year": 750,
+      "uncertainty": 0
+    },
+    "end": {
+      "year": 1258,
+      "uncertainty": 0
+    },
+    "sources": [
+      "https://en.wikipedia.org/wiki/Abbasid_Caliphate"
+    ],
+    "notes": "End marked by the Mongol sack of Baghdad."
+  },
+  {
+    "id": "heian",
+    "name": "Heian period (Japan)",
+    "type": "period",
+    "region": "East Asia",
+    "start": {
+      "year": 794,
+      "uncertainty": 0
+    },
+    "end": {
+      "year": 1185,
+      "uncertainty": 0
+    },
+    "sources": [
+      "https://en.wikipedia.org/wiki/Heian_period"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "chola",
+    "name": "Chola Empire (medieval)",
+    "type": "civilization",
+    "region": "South Asia",
+    "start": {
+      "year": 848,
+      "uncertainty": 5
+    },
+    "end": {
+      "year": 1279,
+      "uncertainty": 0
+    },
+    "sources": [
+      "https://en.wikipedia.org/wiki/Chola_dynasty"
+    ],
+    "notes": "Tamil maritime empire with naval reach into Southeast Asia."
+  },
+  {
+    "id": "lanse",
+    "name": "Norse settlement at L'Anse aux Meadows",
+    "type": "event",
+    "region": "Americas",
+    "start": {
+      "year": 1021,
+      "uncertainty": 0
+    },
+    "end": {
+      "year": 1021,
+      "uncertainty": 0
+    },
+    "sources": [
+      "https://en.wikipedia.org/wiki/L'Anse_aux_Meadows"
+    ],
+    "notes": "Tree-ring evidence dates Norse felling activity to 1021 CE (Kuitems et al., 2021)."
+  },
+  {
+    "id": "cahokia",
+    "name": "Cahokia",
+    "type": "civilization",
+    "region": "Americas",
+    "start": {
+      "year": 1050,
+      "uncertainty": 50
+    },
+    "end": {
+      "year": 1350,
+      "uncertainty": 50
+    },
+    "sources": [
+      "https://en.wikipedia.org/wiki/Cahokia"
+    ],
+    "notes": "Largest pre-Columbian city north of Mexico."
+  },
+  {
+    "id": "mongol",
+    "name": "Mongol Empire",
+    "type": "civilization",
+    "region": "Eurasia",
+    "start": {
+      "year": 1206,
+      "uncertainty": 0
+    },
+    "end": {
+      "year": 1368,
+      "uncertainty": 0
+    },
+    "sources": [
+      "https://en.wikipedia.org/wiki/Mongol_Empire"
+    ],
+    "notes": "Fragmented into khanates from the 1260s."
+  },
+  {
+    "id": "mali-empire",
+    "name": "Mali Empire",
+    "type": "civilization",
+    "region": "Africa",
+    "start": {
+      "year": 1235,
+      "uncertainty": 0
+    },
+    "end": {
+      "year": 1670,
+      "uncertainty": 30
+    },
+    "sources": [
+      "https://en.wikipedia.org/wiki/Mali_Empire"
+    ],
+    "notes": "Declined from the 1400s."
+  },
+  {
+    "id": "mansa-musa",
+    "name": "Mansa Musa",
+    "type": "person",
+    "region": "Africa",
+    "start": {
+      "year": 1280,
+      "uncertainty": 10
+    },
+    "end": {
+      "year": 1337,
+      "uncertainty": 3
+    },
+    "sources": [
+      "https://en.wikipedia.org/wiki/Mansa_Musa"
+    ],
+    "notes": "Reigned c. 1312-1337; famous for his 1324 pilgrimage."
+  },
+  {
+    "id": "nz-settlement",
+    "name": "Polynesian settlement of New Zealand",
+    "type": "event",
+    "region": "Oceania",
+    "start": {
+      "year": 1280,
+      "uncertainty": 20
+    },
+    "end": {
+      "year": 1280,
+      "uncertainty": 20
+    },
+    "sources": [
+      "https://en.wikipedia.org/wiki/History_of_New_Zealand"
+    ],
+    "notes": "Estimates cluster around 1250-1300 CE."
+  },
+  {
+    "id": "ottoman",
+    "name": "Ottoman Empire",
+    "type": "civilization",
+    "region": "Middle East",
+    "start": {
+      "year": 1299,
+      "uncertainty": 0
+    },
+    "end": {
+      "year": 1922,
+      "uncertainty": 0
+    },
+    "sources": [
+      "https://en.wikipedia.org/wiki/Ottoman_Empire"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "haudenosaunee",
+    "name": "Haudenosaunee Confederacy",
+    "type": "civilization",
+    "region": "Americas",
+    "start": {
+      "year": 1450,
+      "uncertainty": 300
+    },
+    "end": null,
+    "sources": [
+      "https://en.wikipedia.org/wiki/Iroquois"
+    ],
+    "notes": "Oral tradition gives earlier dates than many written-source estimates (c. 1142 to 1600s). Surviving and ongoing."
+  },
+  {
+    "id": "zheng-he",
+    "name": "Zheng He's treasure voyages",
+    "type": "event",
+    "region": "East Asia",
+    "start": {
+      "year": 1405,
+      "uncertainty": 0
+    },
+    "end": {
+      "year": 1433,
+      "uncertainty": 0
+    },
+    "sources": [
+      "https://en.wikipedia.org/wiki/Zheng_He"
+    ],
+    "notes": "Reached Southeast Asia, India, Arabia and East Africa."
+  },
+  {
+    "id": "gutenberg",
+    "name": "Gutenberg's printing press",
+    "type": "technology",
+    "region": "Europe",
+    "start": {
+      "year": 1440,
+      "uncertainty": 10
+    },
+    "end": {
+      "year": 1440,
+      "uncertainty": 10
+    },
+    "sources": [
+      "https://en.wikipedia.org/wiki/Johannes_Gutenberg"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "aztec",
+    "name": "Aztec Empire",
+    "type": "civilization",
+    "region": "Americas",
+    "start": {
+      "year": 1428,
+      "uncertainty": 0
+    },
+    "end": {
+      "year": 1521,
+      "uncertainty": 0
+    },
+    "sources": [
+      "https://en.wikipedia.org/wiki/Aztec_Empire"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "inca",
+    "name": "Inca Empire",
+    "type": "civilization",
+    "region": "Americas",
+    "start": {
+      "year": 1438,
+      "uncertainty": 0
+    },
+    "end": {
+      "year": 1533,
+      "uncertainty": 0
+    },
+    "sources": [
+      "https://en.wikipedia.org/wiki/Inca_Empire"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "columbus",
+    "name": "Columbus's first voyage",
+    "type": "event",
+    "region": "Americas",
+    "start": {
+      "year": 1492,
+      "uncertainty": 0
+    },
+    "end": {
+      "year": 1492,
+      "uncertainty": 0
+    },
+    "sources": [
+      "https://en.wikipedia.org/wiki/First_voyage_of_Christopher_Columbus"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "industrial-revolution",
+    "name": "Industrial Revolution (Britain)",
+    "type": "period",
+    "region": "Europe",
+    "start": {
+      "year": 1760,
+      "uncertainty": 10
+    },
+    "end": {
+      "year": 1840,
+      "uncertainty": 10
+    },
+    "sources": [
+      "https://en.wikipedia.org/wiki/Industrial_Revolution"
+    ],
+    "notes": "Living standards for workers stagnated for decades before improving."
+  },
+  {
+    "id": "napoleon",
+    "name": "Napoleon Bonaparte",
+    "type": "person",
+    "region": "Europe",
+    "start": {
+      "year": 1769,
+      "uncertainty": 0
+    },
+    "end": {
+      "year": 1821,
+      "uncertainty": 0
+    },
+    "sources": [
+      "https://en.wikipedia.org/wiki/Napoleon"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "egypt-campaign",
+    "name": "Napoleon's Egyptian campaign",
+    "type": "event",
+    "region": "Middle East",
+    "start": {
+      "year": 1798,
+      "uncertainty": 0
+    },
+    "end": {
+      "year": 1801,
+      "uncertainty": 0
+    },
+    "sources": [
+      "https://en.wikipedia.org/wiki/French_campaign_in_Egypt_and_Syria"
+    ],
+    "notes": "Direct, sustained French contact with Muslim-majority society."
+  },
+  {
+    "id": "benz-motorwagen",
+    "name": "Benz Patent-Motorwagen",
+    "type": "technology",
+    "region": "Europe",
+    "start": {
+      "year": 1886,
+      "uncertainty": 0
+    },
+    "end": {
+      "year": 1886,
+      "uncertainty": 0
+    },
+    "sources": [
+      "https://en.wikipedia.org/wiki/Benz_Patent-Motorwagen"
+    ],
+    "notes": "Commonly cited as the first practical automobile."
+  },
+  {
+    "id": "ww1",
+    "name": "World War I",
+    "type": "event",
+    "region": "Global",
+    "start": {
+      "year": 1914,
+      "uncertainty": 0
+    },
+    "end": {
+      "year": 1918,
+      "uncertainty": 0
+    },
+    "sources": [
+      "https://en.wikipedia.org/wiki/World_War_I"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "ww2",
+    "name": "World War II",
+    "type": "event",
+    "region": "Global",
+    "start": {
+      "year": 1939,
+      "uncertainty": 0
+    },
+    "end": {
+      "year": 1945,
+      "uncertainty": 0
+    },
+    "sources": [
+      "https://en.wikipedia.org/wiki/World_War_II"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "internet",
+    "name": "The Internet (TCP/IP switchover)",
+    "type": "technology",
+    "region": "Global",
+    "start": {
+      "year": 1983,
+      "uncertainty": 0
+    },
+    "end": null,
+    "sources": [
+      "https://en.wikipedia.org/wiki/History_of_the_Internet"
+    ],
+    "notes": "ARPANET adopted TCP/IP on 1 January 1983."
+  }
+]
