@@ -12,7 +12,12 @@
     "sources": [
       "https://en.wikipedia.org/wiki/Homo_sapiens"
     ],
-    "notes": "Earliest fossils: Jebel Irhoud, Morocco (c. 300,000 years ago). Fully 'modern' skull shape appears later."
+    "notes": "Earliest fossils: Jebel Irhoud, Morocco (c. 300,000 years ago). Fully 'modern' skull shape appears later.",
+    "location": {
+      "lat": 31.86,
+      "lng": -8.87,
+      "label": "Jebel Irhoud, Morocco"
+    }
   },
   {
     "id": "neanderthals",
@@ -30,7 +35,12 @@
     "sources": [
       "https://en.wikipedia.org/wiki/Neanderthal"
     ],
-    "notes": "Interbred with Homo sapiens; most non-Africans carry roughly 1-2% Neanderthal DNA."
+    "notes": "Interbred with Homo sapiens; most non-Africans carry roughly 1-2% Neanderthal DNA.",
+    "location": {
+      "lat": 51.23,
+      "lng": 6.95,
+      "label": "Neander Valley, Germany"
+    }
   },
   {
     "id": "last-glacial-maximum",
@@ -66,7 +76,12 @@
     "sources": [
       "https://en.wikipedia.org/wiki/Neolithic_Revolution"
     ],
-    "notes": "Farming arose independently elsewhere too: China, New Guinea, Mesoamerica, the Andes."
+    "notes": "Farming arose independently elsewhere too: China, New Guinea, Mesoamerica, the Andes.",
+    "location": {
+      "lat": 35.0,
+      "lng": 40.0,
+      "label": "Fertile Crescent"
+    }
   },
   {
     "id": "gobekli-tepe",
@@ -84,7 +99,12 @@
     "sources": [
       "https://en.wikipedia.org/wiki/G%C3%B6bekli_Tepe"
     ],
-    "notes": "Monumental stone enclosures built by hunter-gatherers, before farming was established."
+    "notes": "Monumental stone enclosures built by hunter-gatherers, before farming was established.",
+    "location": {
+      "lat": 37.22,
+      "lng": 38.92,
+      "label": "Göbekli Tepe, Türkiye"
+    }
   },
   {
     "id": "uruk",
@@ -102,7 +122,12 @@
     "sources": [
       "https://en.wikipedia.org/wiki/Uruk"
     ],
-    "notes": "One of the earliest true cities; the Uruk period is a standard marker for early urbanisation."
+    "notes": "One of the earliest true cities; the Uruk period is a standard marker for early urbanisation.",
+    "location": {
+      "lat": 31.32,
+      "lng": 45.64,
+      "label": "Uruk, Iraq"
+    }
   },
   {
     "id": "cuneiform",
@@ -120,7 +145,12 @@
     "sources": [
       "https://en.wikipedia.org/wiki/Cuneiform"
     ],
-    "notes": "Earliest proto-cuneiform tablets come from Uruk."
+    "notes": "Earliest proto-cuneiform tablets come from Uruk.",
+    "location": {
+      "lat": 31.9,
+      "lng": 45.2,
+      "label": "Uruk, Iraq"
+    }
   },
   {
     "id": "sumer",
@@ -138,7 +168,12 @@
     "sources": [
       "https://en.wikipedia.org/wiki/Sumer"
     ],
-    "notes": "End date is the fall of Ur III."
+    "notes": "End date is the fall of Ur III.",
+    "location": {
+      "lat": 30.96,
+      "lng": 46.1,
+      "label": "Ur, Iraq"
+    }
   },
   {
     "id": "ancient-egypt",
@@ -156,7 +191,12 @@
     "sources": [
       "https://en.wikipedia.org/wiki/Ancient_Egypt"
     ],
-    "notes": "From unification to the Roman annexation after Cleopatra VII."
+    "notes": "From unification to the Roman annexation after Cleopatra VII.",
+    "location": {
+      "lat": 29.85,
+      "lng": 31.25,
+      "label": "Memphis, Egypt"
+    }
   },
   {
     "id": "caral",
@@ -174,7 +214,12 @@
     "sources": [
       "https://en.wikipedia.org/wiki/Caral"
     ],
-    "notes": "Among the oldest urban centres in the Americas, on the Peruvian coast."
+    "notes": "Among the oldest urban centres in the Americas, on the Peruvian coast.",
+    "location": {
+      "lat": -10.89,
+      "lng": -77.52,
+      "label": "Caral, Peru"
+    }
   },
   {
     "id": "great-pyramid",
@@ -192,7 +237,12 @@
     "sources": [
       "https://en.wikipedia.org/wiki/Great_Pyramid_of_Giza"
     ],
-    "notes": "Built for Khufu; construction took roughly two decades."
+    "notes": "Built for Khufu; construction took roughly two decades.",
+    "location": {
+      "lat": 29.98,
+      "lng": 31.13,
+      "label": "Giza, Egypt"
+    }
   },
   {
     "id": "indus",
@@ -210,7 +260,12 @@
     "sources": [
       "https://en.wikipedia.org/wiki/Indus_Valley_Civilisation"
     ],
-    "notes": "Script remains undeciphered."
+    "notes": "Script remains undeciphered.",
+    "location": {
+      "lat": 27.33,
+      "lng": 68.14,
+      "label": "Mohenjo-daro, Pakistan"
+    }
   },
   {
     "id": "shang",
@@ -228,7 +283,12 @@
     "sources": [
       "https://en.wikipedia.org/wiki/Shang_dynasty"
     ],
-    "notes": "Oracle-bone inscriptions give the earliest securely attested Chinese writing."
+    "notes": "Oracle-bone inscriptions give the earliest securely attested Chinese writing.",
+    "location": {
+      "lat": 36.1,
+      "lng": 114.3,
+      "label": "Anyang, China"
+    }
   },
   {
     "id": "olmec",
@@ -246,7 +306,12 @@
     "sources": [
       "https://en.wikipedia.org/wiki/Olmecs"
     ],
-    "notes": "Often called a 'mother culture' of Mesoamerica, a label scholars debate."
+    "notes": "Often called a 'mother culture' of Mesoamerica, a label scholars debate.",
+    "location": {
+      "lat": 17.73,
+      "lng": -94.76,
+      "label": "San Lorenzo, Mexico"
+    }
   },
   {
     "id": "lapita",
@@ -264,7 +329,12 @@
     "sources": [
       "https://en.wikipedia.org/wiki/Lapita_culture"
     ],
-    "notes": "Austronesian-speaking seafarers with roots traced to Taiwan and southern China."
+    "notes": "Austronesian-speaking seafarers with roots traced to Taiwan and southern China.",
+    "location": {
+      "lat": -4.5,
+      "lng": 152.0,
+      "label": "Bismarck Archipelago"
+    }
   },
   {
     "id": "samoa-settlement",
@@ -282,7 +352,12 @@
     "sources": [
       "https://en.wikipedia.org/wiki/History_of_Samoa"
     ],
-    "notes": "Radiocarbon estimates cluster roughly 2,900 to 2,700 years ago."
+    "notes": "Radiocarbon estimates cluster roughly 2,900 to 2,700 years ago.",
+    "location": {
+      "lat": -13.83,
+      "lng": -172.03,
+      "label": "Mulifanua, Samoa"
+    }
   },
   {
     "id": "zhou",
@@ -300,7 +375,12 @@
     "sources": [
       "https://en.wikipedia.org/wiki/Zhou_dynasty"
     ],
-    "notes": "Includes the Spring and Autumn and Warring States periods."
+    "notes": "Includes the Spring and Autumn and Warring States periods.",
+    "location": {
+      "lat": 34.3,
+      "lng": 109.0,
+      "label": "Fenghao, China"
+    }
   },
   {
     "id": "achaemenid",
@@ -318,7 +398,12 @@
     "sources": [
       "https://en.wikipedia.org/wiki/Achaemenid_Empire"
     ],
-    "notes": "Conquered by Alexander the Great."
+    "notes": "Conquered by Alexander the Great.",
+    "location": {
+      "lat": 29.93,
+      "lng": 52.89,
+      "label": "Persepolis, Iran"
+    }
   },
   {
     "id": "classical-greece",
@@ -336,7 +421,12 @@
     "sources": [
       "https://en.wikipedia.org/wiki/Classical_Greece"
     ],
-    "notes": "Conventional span: end of the Persian invasions to the death of Alexander."
+    "notes": "Conventional span: end of the Persian invasions to the death of Alexander.",
+    "location": {
+      "lat": 37.97,
+      "lng": 23.72,
+      "label": "Athens, Greece"
+    }
   },
   {
     "id": "alexander",
@@ -354,7 +444,12 @@
     "sources": [
       "https://en.wikipedia.org/wiki/Alexander_the_Great"
     ],
-    "notes": ""
+    "notes": "",
+    "location": {
+      "lat": 40.76,
+      "lng": 22.52,
+      "label": "Pella, Macedon"
+    }
   },
   {
     "id": "roman-republic",
@@ -372,7 +467,12 @@
     "sources": [
       "https://en.wikipedia.org/wiki/Roman_Republic"
     ],
-    "notes": ""
+    "notes": "",
+    "location": {
+      "lat": 41.89,
+      "lng": 12.49,
+      "label": "Rome, Italy"
+    }
   },
   {
     "id": "maurya",
@@ -390,7 +490,12 @@
     "sources": [
       "https://en.wikipedia.org/wiki/Maurya_Empire"
     ],
-    "notes": "Included Ashoka's reign."
+    "notes": "Included Ashoka's reign.",
+    "location": {
+      "lat": 25.61,
+      "lng": 85.14,
+      "label": "Pataliputra, India"
+    }
   },
   {
     "id": "han",
@@ -408,7 +513,12 @@
     "sources": [
       "https://en.wikipedia.org/wiki/Han_dynasty"
     ],
-    "notes": "Interrupted by Wang Mang's Xin dynasty (9-23 CE)."
+    "notes": "Interrupted by Wang Mang's Xin dynasty (9-23 CE).",
+    "location": {
+      "lat": 34.27,
+      "lng": 108.95,
+      "label": "Chang'an, China"
+    }
   },
   {
     "id": "silk-road",
@@ -426,7 +536,12 @@
     "sources": [
       "https://en.wikipedia.org/wiki/Silk_Road"
     ],
-    "notes": "Start reflects Zhang Qian's missions (c. 138 BCE onward). A network, not a single road."
+    "notes": "Start reflects Zhang Qian's missions (c. 138 BCE onward). A network, not a single road.",
+    "location": {
+      "lat": 39.65,
+      "lng": 66.96,
+      "label": "Samarkand, Uzbekistan"
+    }
   },
   {
     "id": "sangam",
@@ -444,7 +559,12 @@
     "sources": [
       "https://en.wikipedia.org/wiki/Sangam_period"
     ],
-    "notes": "Classical Tamil literature; Roman-Indian maritime trade touched the Tamil coast."
+    "notes": "Classical Tamil literature; Roman-Indian maritime trade touched the Tamil coast.",
+    "location": {
+      "lat": 9.92,
+      "lng": 78.12,
+      "label": "Madurai, India"
+    }
   },
   {
     "id": "hopewell",
@@ -462,7 +582,12 @@
     "sources": [
       "https://en.wikipedia.org/wiki/Hopewell_tradition"
     ],
-    "notes": "Exchange network moving copper, shell and obsidian across eastern North America."
+    "notes": "Exchange network moving copper, shell and obsidian across eastern North America.",
+    "location": {
+      "lat": 39.33,
+      "lng": -83.0,
+      "label": "Chillicothe, Ohio"
+    }
   },
   {
     "id": "jesus",
@@ -480,7 +605,12 @@
     "sources": [
       "https://en.wikipedia.org/wiki/Jesus"
     ],
-    "notes": "Historians' consensus dating; exact years debated."
+    "notes": "Historians' consensus dating; exact years debated.",
+    "location": {
+      "lat": 31.78,
+      "lng": 35.22,
+      "label": "Jerusalem"
+    }
   },
   {
     "id": "teotihuacan",
@@ -498,7 +628,12 @@
     "sources": [
       "https://en.wikipedia.org/wiki/Teotihuacan"
     ],
-    "notes": "Peak c. 150-450 CE."
+    "notes": "Peak c. 150-450 CE.",
+    "location": {
+      "lat": 19.69,
+      "lng": -98.84,
+      "label": "Teotihuacan, Mexico"
+    }
   },
   {
     "id": "roman-empire",
@@ -516,7 +651,12 @@
     "sources": [
       "https://en.wikipedia.org/wiki/Roman_Empire"
     ],
-    "notes": "Eastern (Byzantine) half continued to 1453."
+    "notes": "Eastern (Byzantine) half continued to 1453.",
+    "location": {
+      "lat": 41.89,
+      "lng": 12.49,
+      "label": "Rome, Italy"
+    }
   },
   {
     "id": "aksum",
@@ -534,7 +674,12 @@
     "sources": [
       "https://en.wikipedia.org/wiki/Kingdom_of_Aksum"
     ],
-    "notes": "Major Red Sea trading power linking Rome, Arabia and India."
+    "notes": "Major Red Sea trading power linking Rome, Arabia and India.",
+    "location": {
+      "lat": 14.13,
+      "lng": 38.72,
+      "label": "Aksum, Ethiopia"
+    }
   },
   {
     "id": "ghana-empire",
@@ -552,7 +697,12 @@
     "sources": [
       "https://en.wikipedia.org/wiki/Ghana_Empire"
     ],
-    "notes": "Origins poorly documented; dates are broad."
+    "notes": "Origins poorly documented; dates are broad.",
+    "location": {
+      "lat": 15.77,
+      "lng": -7.97,
+      "label": "Koumbi Saleh, Mauritania"
+    }
   },
   {
     "id": "classic-maya",
@@ -570,7 +720,12 @@
     "sources": [
       "https://en.wikipedia.org/wiki/Maya_civilization"
     ],
-    "notes": "Many city-states, not one empire."
+    "notes": "Many city-states, not one empire.",
+    "location": {
+      "lat": 17.22,
+      "lng": -89.62,
+      "label": "Tikal, Guatemala"
+    }
   },
   {
     "id": "asuka",
@@ -588,7 +743,12 @@
     "sources": [
       "https://en.wikipedia.org/wiki/Asuka_period"
     ],
-    "notes": "Some chronologies begin it in 592."
+    "notes": "Some chronologies begin it in 592.",
+    "location": {
+      "lat": 34.47,
+      "lng": 135.82,
+      "label": "Asuka, Japan"
+    }
   },
   {
     "id": "muhammad",
@@ -606,7 +766,12 @@
     "sources": [
       "https://en.wikipedia.org/wiki/Muhammad"
     ],
-    "notes": "Dates per classical Islamic tradition and scholarly consensus."
+    "notes": "Dates per classical Islamic tradition and scholarly consensus.",
+    "location": {
+      "lat": 21.42,
+      "lng": 39.83,
+      "label": "Mecca, Arabia"
+    }
   },
   {
     "id": "khalid",
@@ -624,7 +789,12 @@
     "sources": [
       "https://en.wikipedia.org/wiki/Khalid_ibn_al-Walid"
     ],
-    "notes": "Birth year uncertain."
+    "notes": "Birth year uncertain.",
+    "location": {
+      "lat": 33.51,
+      "lng": 36.29,
+      "label": "Damascus, Syria"
+    }
   },
   {
     "id": "rashidun",
@@ -642,7 +812,12 @@
     "sources": [
       "https://en.wikipedia.org/wiki/Rashidun_Caliphate"
     ],
-    "notes": ""
+    "notes": "",
+    "location": {
+      "lat": 24.47,
+      "lng": 39.61,
+      "label": "Medina, Arabia"
+    }
   },
   {
     "id": "tang",
@@ -660,7 +835,12 @@
     "sources": [
       "https://en.wikipedia.org/wiki/Tang_dynasty"
     ],
-    "notes": "Arab merchant communities were present at Guangzhou during this era."
+    "notes": "Arab merchant communities were present at Guangzhou during this era.",
+    "location": {
+      "lat": 34.27,
+      "lng": 108.95,
+      "label": "Chang'an, China"
+    }
   },
   {
     "id": "umayyad",
@@ -678,7 +858,12 @@
     "sources": [
       "https://en.wikipedia.org/wiki/Umayyad_Caliphate"
     ],
-    "notes": ""
+    "notes": "",
+    "location": {
+      "lat": 33.51,
+      "lng": 36.29,
+      "label": "Damascus, Syria"
+    }
   },
   {
     "id": "abbasid",
@@ -696,7 +881,12 @@
     "sources": [
       "https://en.wikipedia.org/wiki/Abbasid_Caliphate"
     ],
-    "notes": "End marked by the Mongol sack of Baghdad."
+    "notes": "End marked by the Mongol sack of Baghdad.",
+    "location": {
+      "lat": 33.31,
+      "lng": 44.37,
+      "label": "Baghdad, Iraq"
+    }
   },
   {
     "id": "heian",
@@ -714,7 +904,12 @@
     "sources": [
       "https://en.wikipedia.org/wiki/Heian_period"
     ],
-    "notes": ""
+    "notes": "",
+    "location": {
+      "lat": 35.01,
+      "lng": 135.77,
+      "label": "Kyoto, Japan"
+    }
   },
   {
     "id": "chola",
@@ -732,7 +927,12 @@
     "sources": [
       "https://en.wikipedia.org/wiki/Chola_dynasty"
     ],
-    "notes": "Tamil maritime empire with naval reach into Southeast Asia."
+    "notes": "Tamil maritime empire with naval reach into Southeast Asia.",
+    "location": {
+      "lat": 10.79,
+      "lng": 79.14,
+      "label": "Thanjavur, India"
+    }
   },
   {
     "id": "lanse",
@@ -750,7 +950,12 @@
     "sources": [
       "https://en.wikipedia.org/wiki/L'Anse_aux_Meadows"
     ],
-    "notes": "Tree-ring evidence dates Norse felling activity to 1021 CE (Kuitems et al., 2021)."
+    "notes": "Tree-ring evidence dates Norse felling activity to 1021 CE (Kuitems et al., 2021).",
+    "location": {
+      "lat": 51.6,
+      "lng": -55.53,
+      "label": "L'Anse aux Meadows, Canada"
+    }
   },
   {
     "id": "cahokia",
@@ -768,7 +973,12 @@
     "sources": [
       "https://en.wikipedia.org/wiki/Cahokia"
     ],
-    "notes": "Largest pre-Columbian city north of Mexico."
+    "notes": "Largest pre-Columbian city north of Mexico.",
+    "location": {
+      "lat": 38.66,
+      "lng": -90.06,
+      "label": "Cahokia, Illinois"
+    }
   },
   {
     "id": "mongol",
@@ -786,7 +996,12 @@
     "sources": [
       "https://en.wikipedia.org/wiki/Mongol_Empire"
     ],
-    "notes": "Fragmented into khanates from the 1260s."
+    "notes": "Fragmented into khanates from the 1260s.",
+    "location": {
+      "lat": 47.2,
+      "lng": 102.8,
+      "label": "Karakorum, Mongolia"
+    }
   },
   {
     "id": "mali-empire",
@@ -804,7 +1019,12 @@
     "sources": [
       "https://en.wikipedia.org/wiki/Mali_Empire"
     ],
-    "notes": "Declined from the 1400s."
+    "notes": "Declined from the 1400s.",
+    "location": {
+      "lat": 11.4,
+      "lng": -8.7,
+      "label": "Niani, Guinea"
+    }
   },
   {
     "id": "mansa-musa",
@@ -822,7 +1042,12 @@
     "sources": [
       "https://en.wikipedia.org/wiki/Mansa_Musa"
     ],
-    "notes": "Reigned c. 1312-1337; famous for his 1324 pilgrimage."
+    "notes": "Reigned c. 1312-1337; famous for his 1324 pilgrimage.",
+    "location": {
+      "lat": 16.77,
+      "lng": -3.01,
+      "label": "Timbuktu, Mali"
+    }
   },
   {
     "id": "nz-settlement",
@@ -840,7 +1065,12 @@
     "sources": [
       "https://en.wikipedia.org/wiki/History_of_New_Zealand"
     ],
-    "notes": "Estimates cluster around 1250-1300 CE."
+    "notes": "Estimates cluster around 1250-1300 CE.",
+    "location": {
+      "lat": -41.5,
+      "lng": 173.9,
+      "label": "Wairau Bar, New Zealand"
+    }
   },
   {
     "id": "ottoman",
@@ -858,7 +1088,12 @@
     "sources": [
       "https://en.wikipedia.org/wiki/Ottoman_Empire"
     ],
-    "notes": ""
+    "notes": "",
+    "location": {
+      "lat": 40.19,
+      "lng": 29.06,
+      "label": "Bursa, Türkiye"
+    }
   },
   {
     "id": "haudenosaunee",
@@ -873,7 +1108,12 @@
     "sources": [
       "https://en.wikipedia.org/wiki/Iroquois"
     ],
-    "notes": "Oral tradition gives earlier dates than many written-source estimates (c. 1142 to 1600s). Surviving and ongoing."
+    "notes": "Oral tradition gives earlier dates than many written-source estimates (c. 1142 to 1600s). Surviving and ongoing.",
+    "location": {
+      "lat": 43.0,
+      "lng": -76.15,
+      "label": "Onondaga, New York"
+    }
   },
   {
     "id": "zheng-he",
@@ -891,7 +1131,12 @@
     "sources": [
       "https://en.wikipedia.org/wiki/Zheng_He"
     ],
-    "notes": "Reached Southeast Asia, India, Arabia and East Africa."
+    "notes": "Reached Southeast Asia, India, Arabia and East Africa.",
+    "location": {
+      "lat": 32.06,
+      "lng": 118.8,
+      "label": "Nanjing, China"
+    }
   },
   {
     "id": "gutenberg",
@@ -909,7 +1154,12 @@
     "sources": [
       "https://en.wikipedia.org/wiki/Johannes_Gutenberg"
     ],
-    "notes": ""
+    "notes": "",
+    "location": {
+      "lat": 50.0,
+      "lng": 8.27,
+      "label": "Mainz, Germany"
+    }
   },
   {
     "id": "aztec",
@@ -927,7 +1177,12 @@
     "sources": [
       "https://en.wikipedia.org/wiki/Aztec_Empire"
     ],
-    "notes": ""
+    "notes": "",
+    "location": {
+      "lat": 19.43,
+      "lng": -99.13,
+      "label": "Tenochtitlan, Mexico"
+    }
   },
   {
     "id": "inca",
@@ -945,7 +1200,12 @@
     "sources": [
       "https://en.wikipedia.org/wiki/Inca_Empire"
     ],
-    "notes": ""
+    "notes": "",
+    "location": {
+      "lat": -13.52,
+      "lng": -71.97,
+      "label": "Cusco, Peru"
+    }
   },
   {
     "id": "columbus",
@@ -963,7 +1223,12 @@
     "sources": [
       "https://en.wikipedia.org/wiki/First_voyage_of_Christopher_Columbus"
     ],
-    "notes": ""
+    "notes": "",
+    "location": {
+      "lat": 24.05,
+      "lng": -74.5,
+      "label": "San Salvador, Bahamas"
+    }
   },
   {
     "id": "industrial-revolution",
@@ -981,7 +1246,12 @@
     "sources": [
       "https://en.wikipedia.org/wiki/Industrial_Revolution"
     ],
-    "notes": "Living standards for workers stagnated for decades before improving."
+    "notes": "Living standards for workers stagnated for decades before improving.",
+    "location": {
+      "lat": 53.48,
+      "lng": -2.24,
+      "label": "Manchester, England"
+    }
   },
   {
     "id": "napoleon",
@@ -999,7 +1269,12 @@
     "sources": [
       "https://en.wikipedia.org/wiki/Napoleon"
     ],
-    "notes": ""
+    "notes": "",
+    "location": {
+      "lat": 48.86,
+      "lng": 2.35,
+      "label": "Paris, France"
+    }
   },
   {
     "id": "egypt-campaign",
@@ -1017,7 +1292,12 @@
     "sources": [
       "https://en.wikipedia.org/wiki/French_campaign_in_Egypt_and_Syria"
     ],
-    "notes": "Direct, sustained French contact with Muslim-majority society."
+    "notes": "Direct, sustained French contact with Muslim-majority society.",
+    "location": {
+      "lat": 30.04,
+      "lng": 31.24,
+      "label": "Cairo, Egypt"
+    }
   },
   {
     "id": "benz-motorwagen",
@@ -1035,7 +1315,12 @@
     "sources": [
       "https://en.wikipedia.org/wiki/Benz_Patent-Motorwagen"
     ],
-    "notes": "Commonly cited as the first practical automobile."
+    "notes": "Commonly cited as the first practical automobile.",
+    "location": {
+      "lat": 49.49,
+      "lng": 8.47,
+      "label": "Mannheim, Germany"
+    }
   },
   {
     "id": "ww1",
@@ -1104,7 +1389,12 @@
     "sources": [
       "https://en.wikipedia.org/wiki/Byzantine_Empire"
     ],
-    "notes": "Continuation of the Roman state in the east; start date follows the founding of Constantinople."
+    "notes": "Continuation of the Roman state in the east; start date follows the founding of Constantinople.",
+    "location": {
+      "lat": 41.01,
+      "lng": 28.98,
+      "label": "Constantinople"
+    }
   },
   {
     "id": "sasanian",
@@ -1122,7 +1412,12 @@
     "sources": [
       "https://en.wikipedia.org/wiki/Sasanian_Empire"
     ],
-    "notes": "Last pre-Islamic Persian empire."
+    "notes": "Last pre-Islamic Persian empire.",
+    "location": {
+      "lat": 33.09,
+      "lng": 44.58,
+      "label": "Ctesiphon, Iraq"
+    }
   },
   {
     "id": "pallava",
@@ -1140,7 +1435,12 @@
     "sources": [
       "https://en.wikipedia.org/wiki/Pallava_dynasty"
     ],
-    "notes": "Tamil-region dynasty centred on Kanchipuram, between the Sangam era and the Cholas."
+    "notes": "Tamil-region dynasty centred on Kanchipuram, between the Sangam era and the Cholas.",
+    "location": {
+      "lat": 12.84,
+      "lng": 79.7,
+      "label": "Kanchipuram, India"
+    }
   },
   {
     "id": "austronesian",
@@ -1158,7 +1458,12 @@
     "sources": [
       "https://en.wikipedia.org/wiki/Austronesian_peoples"
     ],
-    "notes": "Seafaring migrations from Taiwan and southern China into Southeast Asia, the Pacific and Madagascar."
+    "notes": "Seafaring migrations from Taiwan and southern China into Southeast Asia, the Pacific and Madagascar.",
+    "location": {
+      "lat": 23.7,
+      "lng": 121.0,
+      "label": "Taiwan (origin)"
+    }
   },
   {
     "id": "samoa",
@@ -1173,6 +1478,11 @@
     "sources": [
       "https://en.wikipedia.org/wiki/History_of_Samoa"
     ],
-    "notes": "Descended from Lapita settlers; Polynesian culture developed in place afterwards."
+    "notes": "Descended from Lapita settlers; Polynesian culture developed in place afterwards.",
+    "location": {
+      "lat": -13.6,
+      "lng": -172.4,
+      "label": "Samoa"
+    }
   }
 ]

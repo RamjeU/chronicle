@@ -23,6 +23,8 @@ export interface Entity {
   end: FuzzyYear | null
   sources: string[]
   notes: string
+  /** Where to place it on the globe. Omitted for global events such as the world wars. */
+  location?: { lat: number; lng: number; label: string }
 }
 
 export const CONTACT_KINDS = [

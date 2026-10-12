@@ -1,26 +1,40 @@
 :root {
-  --bg: #14110f;
-  --surface: #1d1915;
-  --surface-2: #231e19;
-  --line: #3a322a;
-  --text: #ece3d3;
-  --muted: #a39683;
-  --accent: #e0a458;
-  --c-civilization: #c9784a;
-  --c-person: #6aa6a0;
-  --c-event: #d9b44a;
-  --c-technology: #8c8fd1;
-  --c-period: #7e9c68;
-  --c-species: #b26a86;
+  --space: #060a13;
+  --surface: #0c1424;
+  --surface-2: #121c32;
+  --glass: rgba(9, 15, 29, 0.74);
+  --line: rgba(176, 200, 255, 0.16);
+  --text: #ece7da;
+  --muted: #9ba7bf;
+  --accent: #ece7da;
+
+  /* Entity types and link confidence. The globe reads the same values from lib/palette.ts. */
+  --c-civilization: #ffb36b;
+  --c-person: #ff7ea8;
+  --c-event: #ffe27a;
+  --c-technology: #a9b4ff;
+  --c-period: #9be28a;
+  --c-species: #d29bff;
+  --tier-documented: #6df0ff;
+  --tier-plausible: #fff3b0;
+
+  --display: 'Newsreader', 'Iowan Old Style', Georgia, serif;
+  --ui: 'Instrument Sans', 'Avenir Next', system-ui, sans-serif;
   color-scheme: dark;
 }
 * { box-sizing: border-box; }
-html, body, #root { height: 100%; margin: 0; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+html, body, #root { margin: 0; min-height: 100%; }
 body {
-  background: var(--bg);
+  background: var(--space);
   color: var(--text);
-  font-family: 'Avenir Next', 'Inter', system-ui, sans-serif;
-  font-size: 14px;
-  line-height: 1.5;
+  font-family: var(--ui);
+  font-size: 15px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
 }
 button { font: inherit; color: inherit; cursor: pointer; }
+a { color: var(--accent); }
+:focus-visible { outline: 2px solid var(--tier-documented); outline-offset: 2px; }
+.visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }

@@ -36,6 +36,10 @@ def check_entities(data, errors):
         if en is not None:
             if not isinstance(en.get("year"), int) or en.get("uncertainty", -1) < 0: errors.append(f"{tag}: bad end")
             elif en["year"] < s["year"]: errors.append(f"{tag}: end before start")
+        loc = e.get("location")
+        if loc is not None:
+            ok = isinstance(loc, dict) and -90 <= loc.get("lat", 999) <= 90 and -180 <= loc.get("lng", 999) <= 180 and loc.get("label")
+            if not ok: errors.append(f"{tag}: bad location")
         if not e.get("sources"): errors.append(f"{tag}: needs at least one source")
         for u in e.get("sources", []):
             if not u.startswith("http"): errors.append(f"{tag}: source is not a URL: {u}")

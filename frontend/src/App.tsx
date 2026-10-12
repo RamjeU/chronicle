@@ -1,90 +1,84 @@
-import { useMemo, useState } from 'react'
-import { Timeline } from './components/Timeline'
-import { Panel } from './components/Panel'
-import { CONTACTS, ENTITIES } from './lib/data'
-import { ENTITY_TYPES, type EntityType } from './lib/types'
-import type { ScaleMode } from './lib/scale'
-import { isAlive } from './lib/time'
+import { useMemo, useRef, useState } from 'react'
+import { Nav } from './components/Nav'
+import { GlobeStage } from './components/GlobeStage'
+import { TimelineSection } from './components/TimelineSection'
+import { ConnectSection } from './components/ConnectSection'
+import { MethodSection } from './components/MethodSection'
+import { ENTITIES } from './lib/data'
+import { MIN_YEAR, showsAt } from './lib/globe'
+import { endYear, PRESENT } from './lib/time'
+import type { Entity } from './lib/types'
 import './App.css'
 
+const clampYear = (y: number) => Math.min(PRESENT, Math.max(MIN_YEAR, Math.round(y)))
+
+/**
+ * The year to show so a selection is visible on the globe: the middle of the shared lifespan of two
+ * entries when they overlap, otherwise the middle of the most recent pick's lifespan.
+ */
+function focusYear(picked: Entity[], current: number): number {
+  const located = picked.filter((e) => e.location)
+  if (!located.length) return current
+  const mid = (a: number, b: number) => Math.round((a + b) / 2)
+  if (located.length === 2) {
+    const lo = Math.max(located[0].start.year, located[1].start.year)
+    const hi = Math.min(endYear(located[0]), endYear(located[1]))
+    if (lo <= hi) return clampYear(mid(lo, hi))
+  }
+  const e = located[located.length - 1]
+  return clampYear(mid(e.start.year, endYear(e)))
+}
+
 export default function App() {
-  const [mode, setMode] = useState<ScaleMode>('log')
-  const [query, setQuery] = useState('')
-  const [hiddenTypes, setHiddenTypes] = useState<Set<EntityType>>(new Set())
+  const stageRef = useRef<HTMLElement | null>(null)
+  const [year, setYear] = useState(1)
   const [selected, setSelected] = useState<string[]>([])
-  const [sliceYear, setSliceYear] = useState<number | null>(null)
 
-  const visible = useMemo(() => {
-    const q = query.trim().toLowerCase()
-    return ENTITIES.filter((e) => !hiddenTypes.has(e.type) && (!q || e.name.toLowerCase().includes(q)))
-  }, [query, hiddenTypes])
+  const selectedEntities = useMemo(
+    () => selected.map((id) => ENTITIES.find((e) => e.id === id)).filter((e): e is NonNullable<typeof e> => Boolean(e)),
+    [selected],
+  )
+  const select = (ids: string[]) => {
+    setSelected(ids)
+    const picked = ids.map((id) => ENTITIES.find((e) => e.id === id)).filter((e): e is Entity => Boolean(e))
+    const target = focusYear(picked, year)
+    // Leave the year alone when the pick is already on the globe (clicking a point should not move time).
+    const visibleNow = picked.length > 0 && picked.every((e) => !e.location || showsAt(e, year))
+    if (picked.length && !visibleNow) setYear(target)
+  }
+  const toggle = (id: string) => select(selected.includes(id) ? selected.filter((x) => x !== id) : [...selected, id].slice(-2))
+  const clear = () => setSelected([])
+  const onYear = (y: number) => setYear(clampYear(y))
 
-  const selectedEntities = selected.map((id) => ENTITIES.find((e) => e.id === id)!).filter(Boolean)
-  const linked = useMemo(() => {
-    const set = new Set<string>()
-    if (selected.length !== 1) return set
-    for (const c of CONTACTS) {
-      if (c.a === selected[0]) set.add(c.b)
-      else if (c.b === selected[0]) set.add(c.a)
-    }
-    return set
-  }, [selected])
-  const alive = useMemo(() => (sliceYear === null ? [] : visible.filter((e) => isAlive(e, sliceYear))), [visible, sliceYear])
-
-  const toggle = (id: string) =>
-    setSelected((s) => (s.includes(id) ? s.filter((x) => x !== id) : [...s, id].slice(-2)))
-
-  const toggleType = (t: EntityType) =>
-    setHiddenTypes((h) => {
-      const n = new Set(h)
-      if (n.has(t)) n.delete(t)
-      else n.add(t)
-      return n
-    })
+  const explore = () => {
+    const el = stageRef.current
+    if (!el) return
+    window.scrollTo({ top: el.offsetTop + (el.offsetHeight - window.innerHeight) * 0.5, behavior: 'smooth' })
+  }
 
   return (
-    <div className="app">
-      <header className="top">
-        <div>
-          <h1>Chronicle</h1>
-          <p>Who existed when, and who could have known whom. {ENTITIES.length} entries, {CONTACTS.length} recorded connections.</p>
-        </div>
-        <div className="controls">
-          <input type="search" placeholder="Filter by name…" value={query} onChange={(e) => setQuery(e.target.value)} />
-          <div className="seg" role="group" aria-label="Time scale">
-            <button className={mode === 'log' ? 'on' : ''} onClick={() => setMode('log')}>Log scale</button>
-            <button className={mode === 'linear' ? 'on' : ''} onClick={() => setMode('linear')}>Linear</button>
-          </div>
-        </div>
-      </header>
-
-      <div className="chips">
-        {ENTITY_TYPES.map((t) => (
-          <button key={t} className={`chip t-${t}${hiddenTypes.has(t) ? ' off' : ''}`} onClick={() => toggleType(t)}>
-            {t}
-          </button>
-        ))}
-      </div>
-
-      <main className="main">
-        <Timeline
-          key={mode}
-          entities={visible}
-          mode={mode}
+    <>
+      <Nav onExplore={explore} />
+      <main>
+        <GlobeStage
+          stageRef={stageRef}
+          year={year}
+          onYear={onYear}
           selected={selected}
-          linked={linked}
-          sliceYear={sliceYear}
+          selectedEntities={selectedEntities}
           onToggle={toggle}
-          onSlice={setSliceYear}
+          onClear={clear}
         />
-        <Panel
-          selected={selectedEntities}
-          sliceYear={sliceYear}
-          alive={alive}
-          onClearSelection={() => setSelected([])}
-          onClearSlice={() => setSliceYear(null)}
-        />
+        <div className="page-body">
+          <TimelineSection year={year} onYear={onYear} selected={selected} selectedEntities={selectedEntities} onToggle={toggle} onClear={clear} />
+          <ConnectSection selected={selected} onSelect={select} />
+          <MethodSection />
+          <footer className="footer">
+            <span>Chronicle, an open history project</span>
+            <a href="https://github.com/RamjeU/chronicle" target="_blank" rel="noreferrer">github.com/RamjeU/chronicle</a>
+          </footer>
+        </div>
       </main>
-    </div>
+    </>
   )
 }
