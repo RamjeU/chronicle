@@ -1,0 +1,426 @@
+{
+  "groups": [
+    {
+      "phrases": [
+        "tamil",
+        "tamils",
+        "tamil people",
+        "tamilakam"
+      ],
+      "ids": [
+        "sangam",
+        "pallava",
+        "chola"
+      ]
+    },
+    {
+      "phrases": [
+        "china",
+        "chinese",
+        "ancient china",
+        "chinese people"
+      ],
+      "ids": [
+        "shang",
+        "zhou",
+        "han",
+        "tang"
+      ]
+    },
+    {
+      "phrases": [
+        "india",
+        "indian",
+        "indians",
+        "indian people",
+        "ancient india"
+      ],
+      "ids": [
+        "indus",
+        "maurya",
+        "sangam",
+        "pallava",
+        "chola"
+      ]
+    },
+    {
+      "phrases": [
+        "japan",
+        "japanese",
+        "japanese people"
+      ],
+      "ids": [
+        "asuka",
+        "heian"
+      ]
+    },
+    {
+      "phrases": [
+        "islam",
+        "muslim",
+        "muslims",
+        "islamic world",
+        "the muslim world"
+      ],
+      "ids": [
+        "muhammad",
+        "rashidun",
+        "umayyad",
+        "abbasid",
+        "ottoman"
+      ]
+    },
+    {
+      "phrases": [
+        "arab",
+        "arabs",
+        "arabia",
+        "arabian",
+        "caliphate",
+        "the caliphate"
+      ],
+      "ids": [
+        "rashidun",
+        "umayyad",
+        "abbasid"
+      ]
+    },
+    {
+      "phrases": [
+        "rome",
+        "roman",
+        "romans",
+        "ancient rome"
+      ],
+      "ids": [
+        "roman-republic",
+        "roman-empire",
+        "byzantine"
+      ]
+    },
+    {
+      "phrases": [
+        "byzantine",
+        "byzantines",
+        "constantinople"
+      ],
+      "ids": [
+        "byzantine"
+      ]
+    },
+    {
+      "phrases": [
+        "greece",
+        "greek",
+        "greeks",
+        "ancient greece"
+      ],
+      "ids": [
+        "classical-greece",
+        "alexander"
+      ]
+    },
+    {
+      "phrases": [
+        "persia",
+        "persian",
+        "persians",
+        "ancient persia"
+      ],
+      "ids": [
+        "achaemenid",
+        "sasanian"
+      ]
+    },
+    {
+      "phrases": [
+        "egypt",
+        "egyptian",
+        "egyptians",
+        "pharaoh",
+        "pharaohs",
+        "ancient egyptians"
+      ],
+      "ids": [
+        "ancient-egypt",
+        "egypt-campaign"
+      ]
+    },
+    {
+      "phrases": [
+        "mesopotamia",
+        "mesopotamian",
+        "mesopotamians"
+      ],
+      "ids": [
+        "sumer",
+        "uruk"
+      ]
+    },
+    {
+      "phrases": [
+        "sumer",
+        "sumerian",
+        "sumerians"
+      ],
+      "ids": [
+        "sumer"
+      ]
+    },
+    {
+      "phrases": [
+        "maya",
+        "mayan",
+        "mayans",
+        "the maya"
+      ],
+      "ids": [
+        "classic-maya"
+      ]
+    },
+    {
+      "phrases": [
+        "aztec",
+        "aztecs",
+        "mexica"
+      ],
+      "ids": [
+        "aztec"
+      ]
+    },
+    {
+      "phrases": [
+        "inca",
+        "incas",
+        "incan"
+      ],
+      "ids": [
+        "inca"
+      ]
+    },
+    {
+      "phrases": [
+        "mongol",
+        "mongols",
+        "genghis khan"
+      ],
+      "ids": [
+        "mongol"
+      ],
+      "note": "Genghis Khan is represented by the Mongol Empire."
+    },
+    {
+      "phrases": [
+        "samoa",
+        "samoan",
+        "samoans"
+      ],
+      "ids": [
+        "samoa"
+      ]
+    },
+    {
+      "phrases": [
+        "polynesia",
+        "polynesian",
+        "polynesians"
+      ],
+      "ids": [
+        "samoa",
+        "nz-settlement"
+      ]
+    },
+    {
+      "phrases": [
+        "maori",
+        "māori"
+      ],
+      "ids": [
+        "nz-settlement"
+      ]
+    },
+    {
+      "phrases": [
+        "indigenous",
+        "indigenous people",
+        "indigenous peoples",
+        "indigenous people of canada",
+        "indigenous peoples of canada",
+        "first nations",
+        "native americans",
+        "native american"
+      ],
+      "ids": [
+        "haudenosaunee",
+        "cahokia",
+        "hopewell"
+      ],
+      "note": "The dataset holds only a few North American societies so far. Many Indigenous nations are not yet included."
+    },
+    {
+      "phrases": [
+        "west africa",
+        "west african"
+      ],
+      "ids": [
+        "ghana-empire",
+        "mali-empire"
+      ]
+    },
+    {
+      "phrases": [
+        "viking",
+        "vikings",
+        "norse"
+      ],
+      "ids": [
+        "lanse"
+      ]
+    },
+    {
+      "phrases": [
+        "prophet muhammad",
+        "the prophet",
+        "the prophet muhammad",
+        "muhammad",
+        "mohammed",
+        "mohammad",
+        "pbuh",
+        "prophet"
+      ],
+      "ids": [
+        "muhammad"
+      ]
+    },
+    {
+      "phrases": [
+        "jesus christ",
+        "christ",
+        "jesus"
+      ],
+      "ids": [
+        "jesus"
+      ]
+    },
+    {
+      "phrases": [
+        "khalid",
+        "khalid ibn al walid",
+        "khalid bin al walid"
+      ],
+      "ids": [
+        "khalid"
+      ]
+    },
+    {
+      "phrases": [
+        "alexander"
+      ],
+      "ids": [
+        "alexander"
+      ]
+    },
+    {
+      "phrases": [
+        "columbus",
+        "christopher columbus"
+      ],
+      "ids": [
+        "columbus"
+      ]
+    },
+    {
+      "phrases": [
+        "napoleon",
+        "napoleon bonaparte"
+      ],
+      "ids": [
+        "napoleon"
+      ]
+    },
+    {
+      "phrases": [
+        "ottoman",
+        "ottomans"
+      ],
+      "ids": [
+        "ottoman"
+      ]
+    },
+    {
+      "phrases": [
+        "silk road",
+        "the silk road"
+      ],
+      "ids": [
+        "silk-road"
+      ]
+    },
+    {
+      "phrases": [
+        "printing press",
+        "gutenberg"
+      ],
+      "ids": [
+        "gutenberg"
+      ]
+    },
+    {
+      "phrases": [
+        "neanderthal",
+        "neanderthals"
+      ],
+      "ids": [
+        "neanderthals"
+      ]
+    },
+    {
+      "phrases": [
+        "homo sapiens",
+        "modern humans",
+        "early humans"
+      ],
+      "ids": [
+        "homo-sapiens"
+      ]
+    },
+    {
+      "phrases": [
+        "ww1",
+        "wwi",
+        "first world war",
+        "world war 1",
+        "world war one",
+        "the great war"
+      ],
+      "ids": [
+        "ww1"
+      ]
+    },
+    {
+      "phrases": [
+        "ww2",
+        "wwii",
+        "second world war",
+        "world war 2",
+        "world war two"
+      ],
+      "ids": [
+        "ww2"
+      ]
+    },
+    {
+      "phrases": [
+        "car",
+        "cars",
+        "automobile",
+        "automobiles",
+        "motor car"
+      ],
+      "ids": [
+        "benz-motorwagen"
+      ],
+      "note": "The dataset's first car is the 1886 Benz Patent-Motorwagen."
+    }
+  ]
+}

@@ -97,6 +97,13 @@
 .presets button { width: 100%; text-align: left; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 9px 12px; }
 .presets button:hover { border-color: var(--muted); }
 .presets button.on { border-color: var(--text); background: var(--surface-2); }
+.ask-form { display: grid; grid-template-columns: 1fr auto; gap: 8px; align-items: end; }
+.ask-form .field { margin-bottom: 0; }
+.ask-form input { background: var(--surface); color: var(--text); border: 1px solid var(--line); border-radius: 8px; padding: 9px 10px; font: inherit; width: 100%; }
+.ask-form .btn { border-radius: 8px; padding: 9px 18px; cursor: pointer; }
+.reading { margin: 10px 0 0; padding: 10px 12px; border-left: 3px solid var(--tier-plausible); background: var(--surface); border-radius: 0 8px 8px 0; color: var(--muted); font-size: 13.5px; }
+.reading p { margin: 0 0 6px; }
+.reading p:last-child { margin-bottom: 0; }
 
 .method .prose { max-width: 66ch; font-size: 16px; line-height: 1.65; }
 .method dl { display: grid; grid-template-columns: max-content 1fr; gap: 10px 20px; margin: 22px 0; align-items: baseline; }
@@ -131,7 +138,7 @@
 .item:hover .bar { opacity: 1; }
 .item.sel .bar { stroke: var(--text); stroke-width: 2; opacity: 1; }
 .item.linked .bar { stroke: var(--text); stroke-width: 2; stroke-dasharray: 4 2; opacity: 1; }
-.name { font-size: 12px; pointer-events: none; }
+.name { font-size: 12px; }
 .name.in { fill: #17120d; font-weight: 600; }
 .name.out { fill: var(--text); }
 .tooltip { position: absolute; pointer-events: none; z-index: 10; max-width: 260px; display: flex; flex-direction: column; gap: 2px; background: #05080f; border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; box-shadow: 0 6px 24px rgba(0, 0, 0, 0.5); }

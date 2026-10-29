@@ -70,14 +70,29 @@ def check_contacts(contacts, entities, errors):
             errors.append(f"{tag}: window {f}..{t} falls outside the lifetime of {c['a'] if not hits[0] else c['b']}")
 
 
+def check_aliases(aliases, entities, errors):
+    ids = {e["id"] for e in entities}
+    seen = {}
+    for g in aliases.get("groups", []):
+        tag = (g.get("phrases") or ["?"])[0]
+        if not g.get("phrases") or not g.get("ids"): errors.append(f"alias {tag}: needs phrases and ids")
+        for i in g.get("ids", []):
+            if i not in ids: errors.append(f"alias {tag}: unknown entity id {i}")
+        for p in g.get("phrases", []):
+            if p in seen and seen[p] != tag: errors.append(f"alias phrase {p!r} appears in both {seen[p]!r} and {tag!r}")
+            seen[p] = tag
+
+
 def main() -> int:
     entities = json.loads((DATA / "entities.json").read_text(encoding="utf-8"))
     contacts = json.loads((DATA / "contacts.json").read_text(encoding="utf-8"))
+    aliases = json.loads((DATA / "aliases.json").read_text(encoding="utf-8"))
     errors = []
     check_entities(entities, errors)
     check_contacts(contacts, entities, errors)
+    check_aliases(aliases, entities, errors)
     for m in errors: print("ERROR", m)
-    print(f"{len(entities)} entities, {len(contacts)} contacts checked, {len(errors)} problem(s)")
+    print(f"{len(entities)} entities, {len(contacts)} contacts, {len(aliases['groups'])} alias groups checked, {len(errors)} problem(s)")
     return 1 if errors else 0
 
 

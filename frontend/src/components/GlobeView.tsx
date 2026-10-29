@@ -32,6 +32,9 @@ interface Arc {
 /** Camera distance that keeps the whole globe inside the frame on both wide and narrow screens. */
 const baseAltitude = (width: number, height: number) => Math.max(2.6, 2.7 / (width / height) - 1)
 
+/** Asset paths that keep working when the site is served from a sub-path, such as GitHub Pages. */
+const asset = (file: string) => `${import.meta.env.BASE_URL}textures/${file}`
+
 const reducedMotion = () => typeof window !== 'undefined' && window.matchMedia('(prefers-reduced-motion: reduce)').matches
 const esc = (s: string) => s.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]!)
 
@@ -97,14 +100,14 @@ export default function GlobeView({ entities, contacts, year, selected, onToggle
     })
     g.pointOfView({ lat: 22, lng: 35, altitude: baseAltitude(sizeRef.current.w, sizeRef.current.h) }, 0)
 
-    new TextureLoader().load('/textures/earth-water.png', (tex) => {
+    new TextureLoader().load(asset('earth-water.png'), (tex) => {
       material.specularMap = tex
       material.needsUpdate = true
     })
 
     let raf = 0
     let clouds: Mesh | null = null
-    new TextureLoader().load('/textures/clouds.png', (tex) => {
+    new TextureLoader().load(asset('clouds.png'), (tex) => {
       clouds = new Mesh(
         new SphereGeometry(g.getGlobeRadius() * 1.012, 64, 64),
         new MeshPhongMaterial({ map: tex, transparent: true, opacity: 0.32, depthWrite: false }),
@@ -164,8 +167,8 @@ export default function GlobeView({ entities, contacts, year, selected, onToggle
       onGlobeReady={onReady}
       backgroundColor="rgba(0,0,0,0)"
       globeMaterial={material}
-      globeImageUrl="/textures/earth-blue-marble.jpg"
-      bumpImageUrl="/textures/earth-topology.png"
+      globeImageUrl={asset('earth-blue-marble.jpg')}
+      bumpImageUrl={asset('earth-topology.png')}
       showAtmosphere
       atmosphereColor="#7ab8ff"
       atmosphereAltitude={0.22}
